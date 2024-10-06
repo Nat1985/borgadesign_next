@@ -3,7 +3,10 @@ import { create } from "zustand";
 const useMainStore = create((set) => ({
     // Burger menu
     isOpen: false,
-    setBurger: (action) => set({ isOpen: action })
+    setBurger: (action) => set({ isOpen: action }),
+    // Submenu
+    isSubOpen: false,
+    setSubMenu: (action) => set({ isSubOpen: action })
 }))
 
 useMainStore.subscribe((state) => {

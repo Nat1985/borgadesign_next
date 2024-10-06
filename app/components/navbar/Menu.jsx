@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 import SubMenu from './SubMenu';
 
 function Menu() {
-    const { setBurger } = useMainStore();
+    const { setBurger, setSubMenu, isSubOpen } = useMainStore();
     const router = useRouter();
 
     const links = [
@@ -68,11 +68,16 @@ function Menu() {
         })
     },)
 
-    // Gestisco le animazioni di spontaggio componente e reindirizzamento
+    // Gestisco le animazioni di smontaggio componente e reindirizzamento
     const [crossClosed, setCrossClosed] = useState(false)
+    const [subHasToClose, setSubHasToClose] = useState(false) // Questo serve per inviare il bit che chiude il submenu
     const handleClosing = (link) => {
+        console.log({ link })
+        if (link === 'close') {
+            setSubHasToClose(true)
+        }
         if (link === '/entreprise') {
-            setIsSubMenu(true)
+            setSubMenu(true)
         } else {
             setCrossClosed(true);
             gsap.to(overlayRef.current, {
@@ -86,13 +91,13 @@ function Menu() {
             });
             gsap.to(whitePanelRef.current, {
                 opacity: 0,
-                duration: 2,
+                duration: 1,
                 delay: 0.3
             });
             setTimeout(() => {
                 setBurger(false)
-                router.push(link.toString())
-            }, 600);
+                link !== 'close' && router.push(link.toString())
+            }, 1300);
         }
     }
 
@@ -103,14 +108,12 @@ function Menu() {
         }
     }, [])
 
-    // Gestisco il sottomenu
-    const [isSubMenu, setIsSubMenu] = useState(false);
     return (
         <div ref={overlayRef} className='fixed inset-0 bg-black bg-opacity-80 flex justify-end z-10'>
-            {!crossClosed && <Image ref={crossRef} className='absolute top-10 right-6 z-10 cursor-pointer' src='/icons/cross.png' width={36} height={36} alt="Menu icon" onClick={handleClosing} />}
+            {!crossClosed && <Image ref={crossRef} className='absolute top-10 right-6 z-10 cursor-pointer' src='/icons/cross.png' width={36} height={36} alt="Menu icon" onClick={() => handleClosing('close')} />}
             {
-                isSubMenu &&
-                <SubMenu />
+                isSubOpen &&
+                <SubMenu hasToClose={subHasToClose} setSubHasToClose={setSubHasToClose} />
             }
             <div ref={whitePanelRef} className={`absolute right-0 top-0 bottom-0 bg-[#231f20] flex flex-col justify-center md:justify-start items-center ${windowWidth <= 768 ? 'left-0' : 'w-96'}`}>
                 <ul ref={containerRef} className='md:mt-[200px] text-white text-4xl text-center flex flex-col gap-8 md:gap-4'>
