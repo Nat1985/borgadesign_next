@@ -71,15 +71,17 @@ function Menu() {
     // Gestisco le animazioni di smontaggio componente e reindirizzamento
     const [crossClosed, setCrossClosed] = useState(false)
     const [subHasToClose, setSubHasToClose] = useState(false) // Questo serve per inviare il bit che chiude il submenu
-    const handleClosing = (link) => {
-        console.log({ link })
+    const handleClick = (link) => {
         if (link === 'close') {
             setSubHasToClose(true)
         }
+        // Apertura del sottomenu
         if (link === '/entreprise') {
             setSubMenu(true)
         } else {
+            // indirizzamento a pagina
             setCrossClosed(true);
+            setSubHasToClose(true)
             gsap.to(overlayRef.current, {
                 backgroundColor: 'rgba(0, 0, 0, 0)',
                 duration: 0.7
@@ -96,7 +98,7 @@ function Menu() {
             });
             setTimeout(() => {
                 setBurger(false)
-                link !== 'close' && router.push(link.toString())
+                link !== 'close' && router.push(link)
             }, 1300);
         }
     }
@@ -110,16 +112,16 @@ function Menu() {
 
     return (
         <div ref={overlayRef} className='fixed inset-0 bg-black bg-opacity-80 flex justify-end z-10'>
-            {!crossClosed && <Image ref={crossRef} className='absolute top-10 right-6 z-10 cursor-pointer' src='/icons/cross.png' width={36} height={36} alt="Menu icon" onClick={() => handleClosing('close')} />}
+            {!crossClosed && <Image ref={crossRef} className='absolute top-10 right-6 z-10 cursor-pointer' src='/icons/cross.png' width={36} height={36} alt="Menu icon" onClick={() => handleClick('close')} />}
             {
                 isSubOpen &&
-                <SubMenu hasToClose={subHasToClose} setSubHasToClose={setSubHasToClose} />
+                <SubMenu hasToClose={subHasToClose} setSubHasToClose={setSubHasToClose} handleClick={handleClick} />
             }
             <div ref={whitePanelRef} className={`absolute right-0 top-0 bottom-0 bg-[#231f20] flex flex-col justify-center md:justify-start items-center ${windowWidth <= 768 ? 'left-0' : 'w-96'}`}>
                 <ul ref={containerRef} className='md:mt-[200px] text-white text-4xl text-center flex flex-col gap-8 md:gap-4'>
                     {
                         links.map((element, index) => {
-                            return <li key={index} className='field font-extralight hover:text-rose-700 cursor-pointer' onClick={() => handleClosing(element.link)}>{element.label}</li>
+                            return <li key={index} className='field font-extralight hover:text-rose-700 cursor-pointer' onClick={() => handleClick(element.link)}>{element.label}</li>
                         })
                     }
                 </ul>
