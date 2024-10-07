@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "CBorga Design",
+  title: "Borga Design",
   description: "---",
 };
 

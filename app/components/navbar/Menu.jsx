@@ -63,7 +63,7 @@ function Menu() {
             x: 400,
             opacity: 0,
             stagger: 0.1,
-            easy: "power2.out",
+            easy: "power2.inOut",
             duration: 0.6
         })
     },)
@@ -89,6 +89,7 @@ function Menu() {
             gsap.to(".field", {
                 x: 400,
                 duration: 0.4,
+                ease: "power3.out",
                 stagger: -0.1
             });
             gsap.to(whitePanelRef.current, {

@@ -11,3 +11,22 @@ body {
   color: var(--borga);
   background: var(--background);
 }
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+p {
+  margin: 16px 0px 16px 0px;
+}

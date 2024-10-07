@@ -14,8 +14,8 @@ function SubMenu({ hasToClose, setSubHasToClose, handleClick }) {
     // Sublinks
     const subLinks = [
         {
-            label: 'Borga Marmi',
-            link: "/borgamarmi"
+            label: 'Borga design',
+            link: "/borga-design"
         },
         {
             label: 'Histoire',
@@ -68,6 +68,7 @@ function SubMenu({ hasToClose, setSubHasToClose, handleClick }) {
             gsap.to(divRef.current, {
                 y: -1000,
                 opacity: 0,
+                ease: "power3.inOut",
                 duration: 0.5
             })
         }
