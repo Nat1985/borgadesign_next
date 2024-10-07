@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import { useRef } from 'react';
 
-const ImageAnimationContainer = ({ children, from }) => {
+const ImageAnimationContainer = ({ children }) => {
     const divRef = useRef();
     useGSAP(() => {
         const element = divRef.current
