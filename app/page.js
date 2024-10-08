@@ -5,8 +5,8 @@ export default function Home() {
     <main className="h-screen md:pt-[116px]">
       {/* Histoire */}
       <Hero
-        title="Une expérience séculaire dans le monde du travail du Marbre, du Granit et des Pierres Naturelles."
-        text="Borga Design"
+        title="Tradition et Savoir-Faire Artisanal depuis 1891"
+        text=""
         imagesArray={[
           '/images/hero/histoire/1.jpg',
           '/images/hero/histoire/2.jpg',
