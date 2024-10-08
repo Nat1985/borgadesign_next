@@ -5,8 +5,8 @@ export default function Home() {
     <main className="h-screen md:pt-[116px]">
       {/* Histoire */}
       <Hero
-        title="Tradition et Savoir-Faire Artisanal depuis 1891"
-        text=""
+        title="Borga Design"
+        text="Tradition et Savoir-Faire Artisanal depuis 1891"
         imagesArray={[
           '/images/hero/histoire/1.jpg',
           '/images/hero/histoire/2.jpg',
