@@ -7,10 +7,9 @@ import gsap from 'gsap';
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import SubMenu from './SubMenu';
 
 function Menu() {
-    const { setBurger, setSubMenu, isSubOpen } = useMainStore();
+    const { setBurger, isSubOpen } = useMainStore();
     const router = useRouter();
 
     const links = [
@@ -19,24 +18,40 @@ function Menu() {
             link: '/'
         },
         {
-            label: 'Entreprise',
-            link: '/entreprise'
+            label: 'Histoire',
+            link: '/histoire'
+        },
+        {
+            label: 'Sols et Murs',
+            link: '/sols-et-murs'
+        },
+        {
+            label: 'Salles de Bain',
+            link: '/salles-de-bain'
+        },
+        {
+            label: 'Cuisines',
+            link: '/cuisines'
+        },
+        {
+            label: 'Piscines',
+            link: '/piscines'
+        },
+        {
+            label: 'Matériaux et Finitions',
+            link: '/materiaux-et-finitions'
         },
         {
             label: 'Réalisations',
-            link: '/réalisations'
+            link: '/realisations'
         },
         {
-            label: 'Matériaux',
-            link: '/matériaux'
+            label: 'Design d’Intérieur',
+            link: '/design-interieur'
         },
         {
             label: 'Contacts',
             link: '/contacts'
-        },
-        {
-            label: 'Rejoignez-nous',
-            link: '/rejoignez-nous'
         },
 
     ]
@@ -70,18 +85,8 @@ function Menu() {
 
     // Gestisco le animazioni di smontaggio componente e reindirizzamento
     const [crossClosed, setCrossClosed] = useState(false)
-    const [subHasToClose, setSubHasToClose] = useState(false) // Questo serve per inviare il bit che chiude il submenu
     const handleClick = (link) => {
-        if (link === 'close') {
-            setSubHasToClose(true)
-        }
-        // Apertura del sottomenu
-        if (link === '/entreprise') {
-            setSubMenu(true)
-        } else {
-            // indirizzamento a pagina
             setCrossClosed(true);
-            setSubHasToClose(true)
             gsap.to(overlayRef.current, {
                 backgroundColor: 'rgba(0, 0, 0, 0)',
                 duration: 0.7
@@ -101,7 +106,6 @@ function Menu() {
                 setBurger(false)
                 link !== 'close' && router.push(link)
             }, 1300);
-        }
     }
 
     // imposto crossClosed di nuovo falso quando il componete viene smontato
@@ -114,10 +118,6 @@ function Menu() {
     return (
         <div ref={overlayRef} className='fixed inset-0 bg-black bg-opacity-80 flex justify-end z-10'>
             {!crossClosed && <Image ref={crossRef} className='absolute top-10 right-6 z-10 cursor-pointer' src='/icons/cross.png' width={36} height={36} alt="Menu icon" onClick={() => handleClick('close')} />}
-            {
-                isSubOpen &&
-                <SubMenu hasToClose={subHasToClose} setSubHasToClose={setSubHasToClose} handleClick={handleClick} />
-            }
             <div ref={whitePanelRef} className={`absolute right-0 top-0 bottom-0 bg-[#231f20] flex flex-col justify-center md:justify-start items-center ${windowWidth <= 768 ? 'left-0' : 'w-96'}`}>
                 <ul ref={containerRef} className='md:mt-[200px] text-white text-4xl text-center flex flex-col gap-8 md:gap-4'>
                     {

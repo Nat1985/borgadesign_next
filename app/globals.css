@@ -13,18 +13,23 @@ body {
 }
 h1 {
   font-size: 4rem;
+  font-weight: lighter;
 }
 h2 {
   font-size: 3rem;
+  font-weight: lighter;
 }
 h3 {
   font-size: 2rem;
+  font-weight: lighter;
 }
 h4 {
   font-size: 1rem;
+  font-weight: lighter;
 }
 h5 {
   font-size: 0.8rem;
+  font-weight: lighter;
 }
 p {
   margin: 16px 0px 16px 0px;
