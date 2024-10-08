@@ -24,6 +24,8 @@ const Hero = ({ title, text, imagesArray, link, delay }) => {
     // Gestisco il click del button
     // Animazioni e link alla pagina
     const mainDivRef = useRef();
+    const titleRef = useRef();
+    const textRef = useRef();
     const buttonRef = useRef();
     const router = useRouter();
     const handleButtonClick = () => {
@@ -32,9 +34,15 @@ const Hero = ({ title, text, imagesArray, link, delay }) => {
             duration: 0.5,
             ease: "power1.inOut"
         });
-        gsap.to(".titles", {
-            y: -1000,
-            stagger: 0.5,
+        gsap.to(titleRef.current, {
+            x: 1000,
+            duration: 1,
+            ease: "back.inOut"
+        });
+        gsap.to(textRef.current, {
+            x: 1000,
+            duration: 1,
+            delay: 0.2,
             ease: "back.inOut"
         });
         gsap.to(mainDivRef.current, {
@@ -77,11 +85,11 @@ const Hero = ({ title, text, imagesArray, link, delay }) => {
                     />
                 </div>
             ))}
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white">
                 <div className="text-center px-16">
                     <div>
-                        <h3 className='titles'>{text}</h3>
-                        <h1 className="titles mb-4">{title}</h1>
+                        <h3 ref={textRef}>{text}</h3>
+                        <h1 ref={titleRef} className="title mb-4">{title}</h1>
                     </div>
                     <div ref={buttonRef}>
                         <MainButton text="En savoir plus sur nous" click={handleButtonClick} />
