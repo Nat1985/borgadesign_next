@@ -1,10 +1,10 @@
-import Hero from "./components/homeSections/Hero";
+import SlideSection from "./components/homeSections/SlideSection";
 
 export default function Home() {
   return (
     <main className="h-screen md:pt-[116px]">
       {/* Histoire */}
-      <Hero
+      <SlideSection
         title="Borga Design"
         text="Tradition et Savoir-Faire Artisanal depuis 1891"
         imagesArray={[
@@ -17,7 +17,7 @@ export default function Home() {
       />
 
       {/* Sols et Murs */}
-      <Hero
+      <SlideSection
         title="Sols et Murs"
         text="Revêtements en marbre, granit et pierres naturelles"
         imagesArray={[
@@ -30,7 +30,7 @@ export default function Home() {
       />
 
       {/* Salles de Bain */}
-      <Hero
+      <SlideSection
         title="Salles de Bain"
         text="Leader dans la réalisation de salles de bains de luxe"
         imagesArray={[
@@ -43,7 +43,7 @@ export default function Home() {
       />
       
       {/* Cuisines */}
-      <Hero
+      <SlideSection
         title="Cuisines"
         text="Réalisation de cuisines sur mesure en marbre"
         imagesArray={[
@@ -56,7 +56,7 @@ export default function Home() {
       />
 
       {/* Piscines */}
-      <Hero
+      <SlideSection
         title="Piscines"
         text="Distributeurs officiels de Magiline"
         imagesArray={[
@@ -69,7 +69,7 @@ export default function Home() {
       />
 
       {/* Matériaux et Finitions */}
-      <Hero
+      <SlideSection
         title="Matériaux et Finitions"
         text="Sélection de matériaux de haute qualité"
         imagesArray={[
@@ -82,7 +82,7 @@ export default function Home() {
       />
 
       {/* Réalisations */}
-      <Hero
+      <SlideSection
         title="Réalisations"
         text="Atelier à Sanremo, avec une main-d’œuvre hautement qualifiée et des machines à la pointe de la technologie"
         imagesArray={[
@@ -95,7 +95,20 @@ export default function Home() {
       />
 
       {/* Design d’Intérieur */}
-      <Hero
+      <SlideSection
+        title="Design d’Intérieur"
+        text="Atelier Plus Montecarlo: Design d’Intérieurs en Marbre"
+        imagesArray={[
+          '/images/hero/design-interieur/1.jpg',
+          '/images/hero/design-interieur/2.jpg',
+          '/images/hero/design-interieur/3.jpg'
+        ]}
+        link="/design-interieur"
+        delay={1.8}
+      />
+
+      {/* Design d’Intérieur */}
+      <SlideSection
         title="Design d’Intérieur"
         text="Atelier Plus Montecarlo: Design d’Intérieurs en Marbre"
         imagesArray={[

@@ -5,14 +5,10 @@ import { MainButton } from '../buttons';
 import { useRouter } from 'next/navigation';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import Image from 'next/image';
 
-const Hero = ({ title, text, imagesArray, link, delay }) => {
+const SlideSection = ({ title, text, imagesArray, link, delay }) => {
     const [currentImage, setCurrentImage] = useState(0);
-    /* const images = [
-        '/images/hero/1.jpg',
-        '/images/hero/2.jpg',
-        '/images/hero/3.jpg'
-    ]; */
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -56,20 +52,6 @@ const Hero = ({ title, text, imagesArray, link, delay }) => {
         }, 1000)
     }
 
-    // Animazione iniziale della hero
-    useEffect(() => {
-        gsap.fromTo(
-            mainDivRef.current,
-            {
-                opacity: 0
-            },
-            {
-                opacity: 1,
-                duration: 2
-            }
-        )
-    }, [])
-
     return (
         <div ref={mainDivRef} className="w-full relative h-screen">
             {imagesArray.map((img, index) => (
@@ -78,10 +60,13 @@ const Hero = ({ title, text, imagesArray, link, delay }) => {
                     className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${index === currentImage ? 'opacity-100' : 'opacity-0'
                         }`}
                 >
-                    <img
+                    <Image
                         src={img}
                         alt={`Hero Image ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        layout="fill"  // Rende l'immagine responsiva, occupa tutto lo spazio del contenitore
+                        objectFit="cover"  // Assicura che l'immagine mantenga il suo rapporto d'aspetto
+                        priority={index === 0}  // Carica in modo prioritario la prima immagine
+                        lazyBoundary="100px"  // Inizia a caricare l'immagine quando si trova a 300px dalla viewport
                     />
                 </div>
             ))}
@@ -100,4 +85,4 @@ const Hero = ({ title, text, imagesArray, link, delay }) => {
     );
 };
 
-export default Hero;
+export default SlideSection;
