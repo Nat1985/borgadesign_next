@@ -9,6 +9,7 @@ import Image from 'next/image';
 
 const SlideSection = ({ title, text, imagesArray, link, delay }) => {
     const [currentImage, setCurrentImage] = useState(0);
+    const [imagesLoaded, setImagesLoaded] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
