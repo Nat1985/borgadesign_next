@@ -5,7 +5,7 @@ import SmoothModal from "./components/SmoothModal";
 
 export default function Home() {
   return (
-    <main className="h-screen md:pt-[116px]">
+    <main className="h-screen pt-[116px]">
       <SmoothModal time={1000}/>
         <div className="w-full flex flex-col">
           {/* Histoire */}
