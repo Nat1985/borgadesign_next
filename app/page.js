@@ -95,14 +95,10 @@ export default function Home() {
         />
 
         {/* Réalisations */}
-        <SlideSection
+        <HeroSection
           title="RÉALISATION"
           text="Atelier à Sanremo, avec une main-d’œuvre hautement qualifiée et des machines à la pointe de la technologie"
-          imagesArray={[
-            '/images/hero/realisations/1.jpg',
-            '/images/hero/realisations/2.jpg',
-            '/images/hero/realisations/1.jpg',
-          ]}
+          image='/images/hero/realisations/1.jpg'
           link="/realisations"
           delay={1.5}
           buttonText="En savoir plus sur nous"
