@@ -112,7 +112,7 @@ export default function Home() {
           title="DESIGN D’INTÉRIEUR"
           text="Atelier Plus Montecarlo: Design d’Intérieurs en Marbre"
           imagesArray={[
-            '/images/hero/design-interieur/2.jpg',
+            '/images/hero/design-interieur/1.jpg',
             '/images/hero/design-interieur/2.jpg',
             '/images/hero/design-interieur/3.jpg'
           ]}
