@@ -3,8 +3,8 @@ import SmoothModal from '../../components/SmoothModal'
 import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
 import Image from 'next/image'
-import ImageCrowd from '@/app/components/pagesSections/ImageCrowd'
 import PageContainer from '@/app/components/PageContainer'
+import NewGrid from '@/app/components/pagesSections/NewGrid'
 
 function Cuisines() {
     const imagesArray = [
@@ -18,10 +18,13 @@ function Cuisines() {
     return (
         <PageContainer>
             <SmoothModal time={1000} />
-            <h2 className="h2-over-image">Cuisines</h2>
+            <div className="w-full post-image">
+                <h2 className="h2-over-image">Cuisines</h2>
+            </div>
+            
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/cuisines/page1.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/cuisines/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
             <SlideEntryWrapper>
 
@@ -35,7 +38,7 @@ function Cuisines() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/cuisines/page2.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/cuisines/page2.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
@@ -50,7 +53,7 @@ function Cuisines() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <ImageCrowd urlImagesArray={imagesArray} />
+                <NewGrid array={imagesArray} />
             </OpacityEntryWrapper>
 
         </PageContainer>

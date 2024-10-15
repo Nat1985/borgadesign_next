@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
 
-const SlideSection = ({ title, text, imagesArray, link, delay }) => {
+const SlideSection = ({ title, text, imagesArray, link, delay, buttonText }) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [imagesLoaded, setImagesLoaded] = useState(0);
 
@@ -78,7 +78,7 @@ const SlideSection = ({ title, text, imagesArray, link, delay }) => {
                         <h1 ref={titleRef} className="title mb-4">{title}</h1>
                     </div>
                     <div ref={buttonRef}>
-                        <MainButton text="En savoir plus sur nous" click={handleButtonClick} />
+                        <MainButton text={buttonText} click={handleButtonClick} />
                     </div>
                 </div>
             </div>

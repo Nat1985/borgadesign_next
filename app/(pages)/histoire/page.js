@@ -1,10 +1,10 @@
 import React from 'react'
 import SmoothModal from '../../components/SmoothModal'
 import PageContainer from '@/app/components/PageContainer'
-import ImageCrowd from '@/app/components/pagesSections/ImageCrowd'
 import Image from 'next/image'
 import SlideWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
+import NewGrid from '@/app/components/pagesSections/NewGrid'
 
 function Histoire() {
     const imagesArray = [
@@ -18,7 +18,9 @@ function Histoire() {
     return (
         <PageContainer isDark>
             <SmoothModal time={1000} />
-            <h2>Histoire</h2>
+            <div className="w-full post-image">
+                <h2>Histoire</h2>
+            </div>
 
             <SlideWrapper>
                 <p>
@@ -32,7 +34,7 @@ function Histoire() {
             </SlideWrapper>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/histoire/history1.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/histoire/history1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideWrapper fromDx>
@@ -54,7 +56,7 @@ function Histoire() {
             </SlideWrapper>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/histoire/history2.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/histoire/history2.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideWrapper fromDx>
@@ -83,7 +85,7 @@ function Histoire() {
             </SlideWrapper>
 
             <OpacityEntryWrapper>
-                <ImageCrowd urlImagesArray={imagesArray} />
+                <NewGrid array={imagesArray} />
             </OpacityEntryWrapper >
         </PageContainer>
     )

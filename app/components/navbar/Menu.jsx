@@ -119,7 +119,7 @@ function Menu() {
         <div ref={overlayRef} className='fixed inset-0 bg-black bg-opacity-80 flex justify-end z-10'>
             {!crossClosed && <Image ref={crossRef} className='absolute top-10 right-6 z-10 cursor-pointer' src='/icons/cross.png' width={36} height={36} alt="Menu icon" onClick={() => handleClick('close')} />}
             <div ref={whitePanelRef} className={`absolute right-0 top-0 bottom-0 bg-[#231f20] flex flex-col justify-center md:justify-start items-center ${windowWidth <= 768 ? 'left-0' : 'w-96'}`}>
-                <ul ref={containerRef} className='md:mt-[100px] text-white text-4xl text-center flex flex-col gap-8 md:gap-4'>
+                <ul ref={containerRef} className='md:mt-[100px] text-white text-3xl text-center flex flex-col gap-8 md:gap-4'>
                     {
                         links.map((element, index) => {
                             return <li key={index} className='field font-extralight hover:text-rose-700 cursor-pointer' onClick={() => handleClick(element.link)}>{element.label}</li>

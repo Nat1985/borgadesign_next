@@ -4,24 +4,27 @@ import PageContainer from '@/app/components/PageContainer'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
 import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import Image from 'next/image'
-import ImageCrowd from '@/app/components/pagesSections/ImageCrowd'
+import DoubleImage from '@/app/components/pagesSections/DoubleImage'
+import TripleImage from '@/app/components/pagesSections/TripleImage'
 
 function Piscines() {
     const imagesArray = [
         "/images/pages/piscines/1.jpg",
         "/images/pages/piscines/2.jpg",
-        "/images/pages/piscines/3.jpg",
+        "/images/pages/piscines/3.png",
         "/images/pages/piscines/4.jpg",
         "/images/pages/piscines/5.jpg",
-        "/images/pages/piscines/6.jpg"
+        "/images/pages/piscines/6.png"
     ]
     return (
         <PageContainer isDark>
             <SmoothModal time={1000} />
-            <h2 className="h2-over-image">Piscines</h2>
+            <div className="w-full post-image">
+                <h2 className="h2-over-image">Piscines</h2>
+            </div>
 
             <OpacityEntryWrapper>
-            <Image src="/images/pages/piscines/page1.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/piscines/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
 
             </OpacityEntryWrapper>
 
@@ -36,8 +39,7 @@ function Piscines() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-            <Image src="/images/pages/piscines/page2.jpg" width={300} height={300} layout="responsive" />
-
+                <Image src="/images/pages/piscines/page2.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
@@ -49,8 +51,15 @@ function Piscines() {
                 </p>
             </SlideEntryWrapper>
 
+            <div className="mb-8">
+                <OpacityEntryWrapper>
+                    <Image src={imagesArray[2]} width={300} height={300} layout="responsive" className="post-image" />
+                </OpacityEntryWrapper>
+            </div>
+
             <OpacityEntryWrapper>
-                <ImageCrowd urlImagesArray={imagesArray} />
+                <DoubleImage image1={imagesArray[0]} image2={imagesArray[1]} />
+                <TripleImage image1={imagesArray[3]} image2={imagesArray[4]} image3={imagesArray[5]} />
             </OpacityEntryWrapper>
 
         </PageContainer>

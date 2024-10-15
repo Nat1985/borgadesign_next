@@ -4,22 +4,22 @@ import PageContainer from '@/app/components/PageContainer'
 import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
 import Image from 'next/image'
+import DoubleImage from '@/app/components/pagesSections/DoubleImage'
 
 function Realisations() {
     const imagesArray = [
-        "/images/pages/realisations/1.jpg",
-        "/images/pages/realisations/2.jpg",
-        "/images/pages/realisations/3.jpg",
-        "/images/pages/realisations/4.jpg",
-        "/images/pages/realisations/5.jpg",
-        "/images/pages/realisations/6.jpg"
+        "/images/pages/realisations/page2.jpg",
+        "/images/pages/realisations/page3.jpg"
     ];
     return (
         <PageContainer isDark>
             <SmoothModal time={1000} />
+            <div className="w-full post-image">
+                <h2 className="h2-over-image">Réalisations</h2>
+            </div>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/realisations/page1.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/realisations/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
@@ -27,7 +27,7 @@ function Realisations() {
                     Borga Design a une vaste expérience dans la réalisation d'œuvres en marbre et en pierre naturelle.
                     Parmi nos projets les plus prestigieux, on retrouve:
                 </p>    
-                <ul className="text-ul">
+                <ul className="post-image ul-disc pl-8 pb-8">
                     <li>Balustrades</li>
                     <li>Colonnes</li>
                     <li>Fontaines</li>
@@ -45,12 +45,7 @@ function Realisations() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <div className="flex flex-col gap-4">
-                <Image src="/images/pages/realisations/page2.jpg" width={300} height={300} layout="responsive" />
-                <Image src="/images/pages/realisations/page3.jpg" width={300} height={300} layout="responsive" />
-                <Image src="/images/pages/realisations/page4.jpg" width={300} height={300} layout="responsive" />
-                </div>
-
+                <DoubleImage image1={imagesArray[0]} image2={imagesArray[1]} />
             </OpacityEntryWrapper>
 
 

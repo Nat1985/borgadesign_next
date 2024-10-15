@@ -4,7 +4,9 @@ import PageContainer from '@/app/components/PageContainer'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
 import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import Image from 'next/image'
-import ImageCrowd from '@/app/components/pagesSections/ImageCrowd'
+import NewGrid from '@/app/components/pagesSections/NewGrid'
+import DoubleImage from '@/app/components/pagesSections/DoubleImage'
+import Link from 'next/link'
 
 function DesignDInterieur() {
     const imagesArray = [
@@ -18,10 +20,12 @@ function DesignDInterieur() {
     return (
         <PageContainer>
             <SmoothModal time={1000} />
-            <h2>Design d’Intérieur</h2>
+            <div className="w-full post-image">
+                <h2 className="h2-over-image">Design d’Intérieur</h2>
+            </div>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/design-interieur/page1.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/design-interieur/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
@@ -35,7 +39,7 @@ function DesignDInterieur() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/design-interieur/page2.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/design-interieur/page2.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
@@ -49,13 +53,15 @@ function DesignDInterieur() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <div className="flex flex-col gap-4 mt-4">
-                    <Image src="/images/pages/design-interieur/page3.jpg" width={300} height={300} layout="responsive" />
-                    <Image src="/images/pages/design-interieur/page4.png" width={300} height={300} layout="responsive" />
-                </div>
+                <NewGrid array={imagesArray} />
+                <DoubleImage image1="/images/pages/design-interieur/page3.jpg" image2="/images/pages/design-interieur/page4.png" />
             </OpacityEntryWrapper>
 
-            <ImageCrowd urlImagesArray={imagesArray} />
+            <SlideEntryWrapper>
+                <div className="w-full flex justify-center mt-8">
+                    <Link href="https://atelierplusmontecarlo.com"><h3>Atelier Plus Montecarlo</h3></Link>
+                </div>
+            </SlideEntryWrapper>
 
         </PageContainer>
     )

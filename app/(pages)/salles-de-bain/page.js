@@ -4,10 +4,11 @@ import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrap
 import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import PageContainer from '@/app/components/PageContainer'
 import Image from 'next/image'
-import ImageCrowd from '@/app/components/pagesSections/ImageCrowd'
+import NewGrid from '@/app/components/pagesSections/NewGrid'
+import QuadrupleImage from '@/app/components/pagesSections/QuadrupleImage'
 
 function SallesDeBain() {
-    const imagesArray= [
+    const imagesArray = [
         "/images/pages/salles-du-bain/1.jpg",
         "/images/pages/salles-du-bain/2.jpg",
         "/images/pages/salles-du-bain/3.jpg",
@@ -18,10 +19,12 @@ function SallesDeBain() {
     return (
         <PageContainer isDark>
             <SmoothModal time={1000} />
-            <h2 className="h2-over-image">Sals du Bain</h2>
+            <div className="w-full post-image">
+                <h2 className="h2-over-image">Sals du Bain</h2>
+            </div>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/salles-du-bain/page1.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/salles-du-bain/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
@@ -35,11 +38,14 @@ function SallesDeBain() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <div className="flex flex-col gap-4">
-                    <Image src="/images/pages/salles-du-bain/page2.jpg" width={300} height={300} layout="responsive" />
-                    <Image src="/images/pages/salles-du-bain/page3.jpg" width={300} height={300} layout="responsive" />
-                </div>
+                <Image src="/images/pages/salles-du-bain/page2.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
+
+            <div className="mt-16">
+                <OpacityEntryWrapper>
+                    <QuadrupleImage image1="/images/pages/salles-du-bain/page3.jpg" image2="/images/pages/salles-du-bain/page4.jpg" image3="/images/pages/salles-du-bain/page5.jpg" image4="/images/pages/salles-du-bain/page6.jpg" />
+                </OpacityEntryWrapper>
+            </div>
 
             <SlideEntryWrapper>
                 <p>
@@ -50,7 +56,7 @@ function SallesDeBain() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <ImageCrowd urlImagesArray={imagesArray} />
+                <NewGrid array={imagesArray} />
             </OpacityEntryWrapper>
 
         </PageContainer>

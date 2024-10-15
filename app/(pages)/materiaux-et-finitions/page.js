@@ -5,7 +5,7 @@ import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrap
 import SlideSection from '@/app/components/homeSections/SlideSection'
 import Image from 'next/image'
 import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
-import ImageCrowd from '@/app/components/pagesSections/ImageCrowd'
+import NewGrid from '@/app/components/pagesSections/NewGrid'
 
 function MateriauxEdFinitions() {
     const imagesArray = [
@@ -19,17 +19,19 @@ function MateriauxEdFinitions() {
     return (
         <PageContainer>
             <SmoothModal time={1000} />
-            <h2 className="h2-over-image">Matériaux et Finitions</h2>
+            <div className="w-full post-image">
+                <h2 className="h2-over-image">Matériaux et Finitions</h2>
+            </div>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/materiaux-et-finitions/page1.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/materiaux-et-finitions/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
                 <p>
                     Borga Design offre une sélection de matériaux de haute qualité, incluant:
                 </p>
-                <ul className="text-ul">
+                <ul className="post-image ul-disc pl-8 pb-8">
                     <li>Marbre</li>
                     <li>Granit</li>
                     <li>Travertin</li>
@@ -47,14 +49,14 @@ function MateriauxEdFinitions() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/materiaux-et-finitions/page2.jpg" width={300} height={300} layout="responsive" />
+                <Image src="/images/pages/materiaux-et-finitions/page2.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
                 <p>
                     Les finitions disponibles incluent:
                 </p>
-                <ul className="text-ul">
+                <ul className="post-image ul-disc pl-8 pb-8">
                     <li>Finition Oxydée : Une surface irrégulière qui met en valeur les veines naturelles de la pierre.</li>
                     <li>Finition Vieillie : Confère un aspect antique à la pierre, la rendant hydrofuge et oléofuge.</li>
                     <li>Finition Naturelle : Parfaite pour les ardoises et porphyres, elle maintient l'aspect brut de la pierre.</li>
@@ -70,7 +72,7 @@ function MateriauxEdFinitions() {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <ImageCrowd urlImagesArray={imagesArray}/>
+                <NewGrid array={imagesArray} />
             </OpacityEntryWrapper>
 
         </PageContainer>
