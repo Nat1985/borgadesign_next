@@ -101,7 +101,7 @@ export default function Home() {
           imagesArray={[
             '/images/hero/realisations/1.jpg',
             '/images/hero/realisations/2.jpg',
-            '/images/hero/realisations/3.jpg'
+            '/images/hero/realisations/1.jpg',
           ]}
           link="/realisations"
           delay={1.5}
