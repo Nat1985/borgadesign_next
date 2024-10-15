@@ -11,7 +11,7 @@ function Histoire() {
         "/images/pages/histoire/1.jpg",
         "/images/pages/histoire/2.jpg",
         "/images/pages/histoire/3.jpg",
-        "/images/pages/histoire/4.jpg",
+        "/images/pages/histoire/3.jpg",
         "/images/pages/histoire/5.jpg",
         "/images/pages/histoire/6.jpg"
     ];
