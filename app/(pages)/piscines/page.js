@@ -6,6 +6,7 @@ import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import Image from 'next/image'
 import DoubleImage from '@/app/components/pagesSections/DoubleImage'
 import TripleImage from '@/app/components/pagesSections/TripleImage'
+import Footer from '@/app/components/footer/Footer'
 
 function Piscines() {
     const imagesArray = [
@@ -61,6 +62,8 @@ function Piscines() {
                 <DoubleImage image1={imagesArray[0]} image2={imagesArray[1]} />
                 <TripleImage image1={imagesArray[3]} image2={imagesArray[4]} image3={imagesArray[5]} />
             </OpacityEntryWrapper>
+
+            <Footer />  
 
         </PageContainer>
     )

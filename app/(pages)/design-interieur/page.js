@@ -7,6 +7,7 @@ import Image from 'next/image'
 import NewGrid from '@/app/components/pagesSections/NewGrid'
 import DoubleImage from '@/app/components/pagesSections/DoubleImage'
 import Link from 'next/link'
+import Footer from '@/app/components/footer/Footer'
 
 function DesignDInterieur() {
     const imagesArray = [
@@ -62,6 +63,8 @@ function DesignDInterieur() {
                     <Link href="https://atelierplusmontecarlo.com"><h3>Atelier Plus Montecarlo</h3></Link>
                 </div>
             </SlideEntryWrapper>
+
+            <Footer />
 
         </PageContainer>
     )

@@ -6,6 +6,7 @@ import SlideSection from '@/app/components/homeSections/SlideSection'
 import Image from 'next/image'
 import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import NewGrid from '@/app/components/pagesSections/NewGrid'
+import Footer from '@/app/components/footer/Footer'
 
 function MateriauxEdFinitions() {
     const imagesArray = [
@@ -74,6 +75,8 @@ function MateriauxEdFinitions() {
             <OpacityEntryWrapper>
                 <NewGrid array={imagesArray} />
             </OpacityEntryWrapper>
+
+            <Footer />
 
         </PageContainer>
 

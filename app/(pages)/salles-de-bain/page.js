@@ -6,6 +6,7 @@ import PageContainer from '@/app/components/PageContainer'
 import Image from 'next/image'
 import NewGrid from '@/app/components/pagesSections/NewGrid'
 import QuadrupleImage from '@/app/components/pagesSections/QuadrupleImage'
+import Footer from '@/app/components/footer/Footer'
 
 function SallesDeBain() {
     const imagesArray = [
@@ -59,6 +60,7 @@ function SallesDeBain() {
                 <NewGrid array={imagesArray} />
             </OpacityEntryWrapper>
 
+            <Footer />
         </PageContainer>
 
     )

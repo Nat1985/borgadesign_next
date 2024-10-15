@@ -5,6 +5,7 @@ import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrap
 import Image from 'next/image'
 import PageContainer from '@/app/components/PageContainer'
 import NewGrid from '@/app/components/pagesSections/NewGrid'
+import Footer from '@/app/components/footer/Footer'
 
 function Cuisines() {
     const imagesArray = [
@@ -21,7 +22,7 @@ function Cuisines() {
             <div className="w-full post-image">
                 <h2 className="h2-over-image">Cuisines</h2>
             </div>
-            
+
 
             <OpacityEntryWrapper>
                 <Image src="/images/pages/cuisines/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
@@ -56,6 +57,8 @@ function Cuisines() {
                 <NewGrid array={imagesArray} />
             </OpacityEntryWrapper>
 
+
+            <Footer />
         </PageContainer>
     )
 }

@@ -1,4 +1,5 @@
 import { MainButton } from "./components/buttons";
+import Footer from "./components/footer/Footer";
 import FullModal from "./components/FullModal";
 import HeroSection from "./components/homeSections/HeroSection";
 import SlideSection from "./components/homeSections/SlideSection";
@@ -120,6 +121,8 @@ export default function Home() {
           delay={1.8}
           buttonText="En savoir plus sur nous"
         />
+
+        <Footer />
       </div>
     </main>
   );

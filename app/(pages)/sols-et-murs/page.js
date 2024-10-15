@@ -5,6 +5,7 @@ import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import Image from 'next/image'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
 import NewGrid from '@/app/components/pagesSections/NewGrid'
+import Footer from '@/app/components/footer/Footer'
 
 function SolsEtMurs() {
     const imagesArray = [
@@ -54,6 +55,8 @@ function SolsEtMurs() {
             <OpacityEntryWrapper>
                 <NewGrid array={imagesArray} />
             </OpacityEntryWrapper >
+
+            <Footer />
         </PageContainer>
     )
 }

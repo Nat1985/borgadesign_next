@@ -5,6 +5,7 @@ import Image from 'next/image'
 import SlideWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
 import NewGrid from '@/app/components/pagesSections/NewGrid'
+import Footer from '@/app/components/footer/Footer'
 
 function Histoire() {
     const imagesArray = [
@@ -87,6 +88,8 @@ function Histoire() {
             <OpacityEntryWrapper>
                 <NewGrid array={imagesArray} />
             </OpacityEntryWrapper >
+            
+            <Footer />
         </PageContainer>
     )
 }

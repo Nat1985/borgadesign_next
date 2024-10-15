@@ -5,6 +5,7 @@ import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
 import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
 import Image from 'next/image'
 import DoubleImage from '@/app/components/pagesSections/DoubleImage'
+import Footer from '@/app/components/footer/Footer'
 
 function Realisations() {
     const imagesArray = [
@@ -26,7 +27,7 @@ function Realisations() {
                 <p>
                     Borga Design a une vaste expérience dans la réalisation d'œuvres en marbre et en pierre naturelle.
                     Parmi nos projets les plus prestigieux, on retrouve:
-                </p>    
+                </p>
                 <ul className="post-image ul-disc pl-8 pb-8">
                     <li>Balustrades</li>
                     <li>Colonnes</li>
@@ -48,6 +49,7 @@ function Realisations() {
                 <DoubleImage image1={imagesArray[0]} image2={imagesArray[1]} />
             </OpacityEntryWrapper>
 
+            <Footer />
 
         </PageContainer>
     )

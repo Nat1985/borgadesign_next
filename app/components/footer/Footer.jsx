@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     console.log(0)
     return (
-        <div className="z-10 w-full bg-[#231f20] p-8 text-white flex flex-col lg:flex-row justify-center gap-2">
+        <div className="z-10 w-full bg-[#231f20] p-8 text-white flex flex-col lg:flex-row justify-center gap-2 mt-16">
             <div className="flex-1 flex flex-col items-center justify-center text-center border-white border-b lg:border-b-0 lg:border-r pb-8 lg:pb-0">
                 <h3>
                     Showroom Borga Design

@@ -1,9 +1,11 @@
 import PageContainer from '@/app/components/PageContainer'
+import SmoothModal from '@/app/components/SmoothModal'
 import React from 'react'
 
 function page() {
     return (
         <PageContainer>
+            <SmoothModal time={1000} />
             <div className="flex flex-col items-center text-center">
                 <h3>
                     Showroom Borga Design
