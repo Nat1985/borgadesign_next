@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { Montserrat } from '@next/font/google';
+import CookieBanner from "./components/CookieBanner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a1037e13-2a10-473a-805b-cd81a2a4b371" data-blockingmode="auto" type="text/javascript"></script>
+        <CookieBanner />
       </head>
       <body className={montserrat.className}>
         <Navbar />
