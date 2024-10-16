@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
+import useWindowWidth from '@/app/hooks/useWindowWidth';
 
 const HeroSection = ({ title, text, image, link, delay, buttonText }) => {
 
@@ -44,23 +45,35 @@ const HeroSection = ({ title, text, image, link, delay, buttonText }) => {
         }, 1000)
     }
 
+    const windowWidth = useWindowWidth();
+
     return (
         <div ref={mainDivRef} className="w-full relative h-screen">
-                <div className='absolute top-0 left-0 w-full h-full'>
-                    <Image
-                        src={image}
-                        alt='Hero Image'
-                        layout="fill"  // Rende l'immagine responsiva, occupa tutto lo spazio del contenitore
-                        objectFit="cover"  // Assicura che l'immagine mantenga il suo rapporto d'aspetto
-                        lazyBoundary="100px"  // Inizia a caricare l'immagine quando si trova a 300px dalla viewport
-                    />
-                </div>
+            <div className='absolute top-0 left-0 w-full h-full'>
+                <Image
+                    src={image}
+                    alt='Hero Image'
+                    layout="fill"  // Rende l'immagine responsiva, occupa tutto lo spazio del contenitore
+                    objectFit="cover"  // Assicura che l'immagine mantenga il suo rapporto d'aspetto
+                    lazyBoundary="100px"  // Inizia a caricare l'immagine quando si trova a 300px dalla viewport
+                />
+            </div>
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white">
-                <div className="text-center px-16">
-                    <div>
-                        <h3 ref={textRef}>{text}</h3>
-                        <h1 ref={titleRef} className="title mb-4">{title}</h1>
-                    </div>
+                <div className="text-center">
+                    {
+                        windowWidth <= 640 &&
+                        <div className='flex flex-col items-center'>
+                            <h3 className="max-w-[300px]" ref={textRef}>{text}</h3>
+                            <h2 ref={titleRef} className="title mb-4">{title}</h2>
+                        </div>
+                    }
+                    {
+                        windowWidth > 640 &&
+                        <div>
+                            <h3 ref={textRef}>{text}</h3>
+                            <h1 ref={titleRef} className="title mb-4">{title}</h1>
+                        </div>
+                    }
                     <div ref={buttonRef}>
                         <MainButton text={buttonText} click={handleButtonClick} />
                     </div>

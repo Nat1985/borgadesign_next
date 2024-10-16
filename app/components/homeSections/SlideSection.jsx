@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
+import useWindowWidth from '../../hooks/useWindowWidth.js';
 
 const SlideSection = ({ title, text, imagesArray, link, delay, buttonText }) => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -53,6 +54,8 @@ const SlideSection = ({ title, text, imagesArray, link, delay, buttonText }) => 
         }, 1000)
     }
 
+    const windowWidth = useWindowWidth();
+
     return (
         <div ref={mainDivRef} className="w-full relative h-screen">
             {imagesArray.map((img, index) => (
@@ -71,15 +74,25 @@ const SlideSection = ({ title, text, imagesArray, link, delay, buttonText }) => 
                     />
                 </div>
             ))}
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white">
-                <div className="text-center px-16">
-                    <div>
-                        <h3 ref={textRef}>{text}</h3>
-                        <h1 ref={titleRef} className="title mb-4">{title}</h1>
-                    </div>
-                    <div ref={buttonRef}>
-                        <MainButton text={buttonText} click={handleButtonClick} />
-                    </div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-white">
+                <div className="text-center">
+                    {
+                        windowWidth <= 640 &&
+                        <div className='flex flex-col items-center'>
+                            <h4 className="max-w-[300px]" ref={textRef}>{text}</h4>
+                            <h2 ref={titleRef} className="title mb-4">{title}</h2>
+                        </div>
+                    }
+                    {
+                        windowWidth > 640 &&
+                        <div>
+                            <h3 ref={textRef}>{text}</h3>
+                            <h1 ref={titleRef} className="title mb-4">{title}</h1>
+                        </div>
+                    }
+                </div>
+                <div ref={buttonRef}>
+                    <MainButton text={buttonText} click={handleButtonClick} />
                 </div>
             </div>
         </div>
