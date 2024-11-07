@@ -20,7 +20,7 @@ function page() {
                 <h3>
                     Horaires d’ouverture
                 </h3>
-                <p>Lundi - Vendredi : 08:00 - 12:00 / 14:00 - 18:30</p>
+                <p>Lundi - Vendredi : 08:00 - 12:00 / 14:00 - 18:00</p>
                 <p>Samedi : 09:00 - 12:00</p>
             </div>
         </PageContainer>

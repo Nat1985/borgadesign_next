@@ -20,7 +20,7 @@ function Cuisines() {
         <PageContainer>
             <SmoothModal time={1000} />
             <div className="w-full post-image">
-                <h2 className="h2-over-image">Cuisines</h2>
+                <h2 className="h2-over-image">Cuisine</h2>
             </div>
 
 

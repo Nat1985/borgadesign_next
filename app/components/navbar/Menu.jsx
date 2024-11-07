@@ -26,12 +26,12 @@ function Menu() {
             link: '/sols-et-murs'
         },
         {
-            label: 'Salles de Bain',
-            link: '/salles-de-bain'
+            label: 'Salle de Bain',
+            link: '/salle-de-bain'
         },
         {
-            label: 'Cuisines',
-            link: '/cuisines'
+            label: 'Cuisine',
+            link: '/cuisine'
         },
         {
             label: 'Piscines',

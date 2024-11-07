@@ -21,7 +21,7 @@ function SallesDeBain() {
         <PageContainer isDark>
             <SmoothModal time={1000} />
             <div className="w-full post-image">
-                <h2 className="h2-over-image">Sals du Bain</h2>
+                <h2 className="h2-over-image">Salle de Bain</h2>
             </div>
 
             <OpacityEntryWrapper>
