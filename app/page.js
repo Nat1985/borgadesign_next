@@ -40,14 +40,14 @@ export default function Home() {
 
         {/* Salles de Bain */}
         <SlideSection
-          title="SALLES DE BAIN"
+          title="SALLE DE BAIN"
           text="Leader dans la réalisation de salles de bains de luxe"
           imagesArray={[
             '/images/hero/salles-de-bain/1.jpg',
             '/images/hero/salles-de-bain/2.jpg',
             '/images/hero/salles-de-bain/3.jpg'
           ]}
-          link="/salles-de-bain"
+          link="/salle-de-bain"
           delay={1.6}
           buttonText="En savoir plus sur nous"
         />
