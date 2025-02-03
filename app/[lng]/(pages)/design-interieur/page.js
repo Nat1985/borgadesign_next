@@ -1,13 +1,13 @@
 import React from 'react'
 import SmoothModal from '../../components/SmoothModal'
-import PageContainer from '@/app/components/PageContainer'
-import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
-import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
+import PageContainer from '../../components/PageContainer'
+import OpacityEntryWrapper from '../../components/pagesSections/OpacityEntryWrapper'
+import SlideEntryWrapper from '../../components/pagesSections/SlideEntryWrapper'
 import Image from 'next/image'
-import NewGrid from '@/app/components/pagesSections/NewGrid'
-import DoubleImage from '@/app/components/pagesSections/DoubleImage'
+import NewGrid from '../../components/pagesSections/NewGrid'
+import DoubleImage from '../../components/pagesSections/DoubleImage'
 import Link from 'next/link'
-import Footer from '@/app/components/footer/Footer'
+import Footer from '../../components/footer/Footer'
 
 function DesignDInterieur() {
     const imagesArray = [

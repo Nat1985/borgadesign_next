@@ -1,11 +1,11 @@
 import React from 'react'
 import SmoothModal from '../../components/SmoothModal'
-import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
-import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
+import SlideEntryWrapper from '../../components/pagesSections/SlideEntryWrapper'
+import OpacityEntryWrapper from '../../components/pagesSections/OpacityEntryWrapper'
 import Image from 'next/image'
-import PageContainer from '@/app/components/PageContainer'
-import NewGrid from '@/app/components/pagesSections/NewGrid'
-import Footer from '@/app/components/footer/Footer'
+import PageContainer from '../../components/PageContainer'
+import NewGrid from '../../components/pagesSections/NewGrid'
+import Footer from '../../components/footer/Footer'
 
 function Cuisines() {
     const imagesArray = [

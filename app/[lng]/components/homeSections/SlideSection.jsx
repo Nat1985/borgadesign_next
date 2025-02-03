@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
-import useWindowWidth from '../../hooks/useWindowWidth.js';
+import useWindowWidth from '../../../hooks/useWindowWidth.js';
 
 const SlideSection = ({ title, text, imagesArray, link, delay, buttonText }) => {
     const [currentImage, setCurrentImage] = useState(0);

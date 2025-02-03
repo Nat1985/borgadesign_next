@@ -1,11 +1,11 @@
 import React from 'react'
 import SmoothModal from '../../components/SmoothModal'
-import PageContainer from '@/app/components/PageContainer'
-import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
-import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
+import PageContainer from '../../components/PageContainer'
+import SlideEntryWrapper from '../../components/pagesSections/SlideEntryWrapper'
+import OpacityEntryWrapper from '../../components/pagesSections/OpacityEntryWrapper'
 import Image from 'next/image'
-import DoubleImage from '@/app/components/pagesSections/DoubleImage'
-import Footer from '@/app/components/footer/Footer'
+import DoubleImage from '../../components/pagesSections/DoubleImage'
+import Footer from '../../components/footer/Footer'
 
 function Realisations() {
     const imagesArray = [

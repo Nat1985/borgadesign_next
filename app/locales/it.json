@@ -1,0 +1,14 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "history": "Storia",
+        "floorAndWalls": "Pavimenti e Muri",
+        "bathroom": "Bagno",
+        "kitchen": "Cucina",
+        "swimmingPools": "Piscine",
+        "materialsAndFinisches": "Materiali e Finiture",
+        "projects": "Realizzazioni",
+        "interiorDesign": "Design d’Interni",
+        "contacts": "Contatti"
+    }
+}

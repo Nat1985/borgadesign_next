@@ -1,12 +1,12 @@
 import React from 'react'
 import SmoothModal from '../../components/SmoothModal'
-import PageContainer from '@/app/components/PageContainer'
-import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
-import SlideSection from '@/app/components/homeSections/SlideSection'
+import PageContainer from '../../components/PageContainer'
+import OpacityEntryWrapper from '../../components/pagesSections/OpacityEntryWrapper'
+import SlideSection from '../../components/homeSections/SlideSection'
 import Image from 'next/image'
-import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
-import NewGrid from '@/app/components/pagesSections/NewGrid'
-import Footer from '@/app/components/footer/Footer'
+import SlideEntryWrapper from '../../components/pagesSections/SlideEntryWrapper'
+import NewGrid from '../../components/pagesSections/NewGrid'
+import Footer from '../../components/footer/Footer'
 
 function MateriauxEdFinitions() {
     const imagesArray = [

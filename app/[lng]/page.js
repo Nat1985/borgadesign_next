@@ -7,7 +7,7 @@ import Loader from "./components/Loader";
 import SmoothModal from "./components/SmoothModal";
 import Image from "next/image";
 
-export default function Home() {
+export default function Home({ params }) {
   return (
     <main className="h-screen pt-[116px]">
       <SmoothModal time={1000} />
@@ -21,8 +21,6 @@ export default function Home() {
           delay={1}
           buttonText="Découvrez notre histoire"
         />
-
-        
 
         {/* Sols et Murs */}
         <SlideSection

@@ -6,53 +6,29 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { useParams, useRouter, usePathname } from 'next/navigation';
+import { getDictionary } from '@/app/locales/getDictionary';
 
 function Menu() {
+    // Catturo params per use client (useParams)
+    const params = useParams();
+    const lng = params.lng || 'fr';
+    const t = getDictionary(lng);
+
     const { setBurger, isSubOpen } = useMainStore();
     const router = useRouter();
 
     const links = [
-        {
-            label: 'Accueil',
-            link: '/'
-        },
-        {
-            label: 'Histoire',
-            link: '/histoire'
-        },
-        {
-            label: 'Sols et Murs',
-            link: '/sols-et-murs'
-        },
-        {
-            label: 'Salle de Bain',
-            link: '/salle-de-bain'
-        },
-        {
-            label: 'Cuisine',
-            link: '/cuisine'
-        },
-        {
-            label: 'Piscines',
-            link: '/piscines'
-        },
-        {
-            label: 'Matériaux et Finitions',
-            link: '/materiaux-et-finitions'
-        },
-        {
-            label: 'Réalisations',
-            link: '/realisations'
-        },
-        {
-            label: 'Design d’Intérieur',
-            link: '/design-interieur'
-        },
-        {
-            label: 'Contacts',
-            link: '/contacts'
-        },
+        { label: t.Navbar.home, link: `/${lng}` },
+        { label: t.Navbar.history, link: `/${lng}/histoire` },
+        { label: t.Navbar.floorAndWalls, link: `/${lng}/sols-et-murs` },
+        { label: t.Navbar.bathroom, link: `/${lng}/salle-de-bain` },
+        { label: t.Navbar.kitchen, link: `/${lng}/cuisine` },
+        { label: t.Navbar.swimmingPools, link: `/${lng}/piscines` },
+        { label: t.Navbar.materialsAndFinisches, link: `/${lng}/materiaux-et-finitions` },
+        { label: t.Navbar.projects, link: `/${lng}/realisations` },
+        { label: t.Navbar.interiorDesign, link: `/${lng}/design-interieur` },
+        { label: t.Navbar.contacts, link: `/${lng}/contacts` },
 
     ]
     const windowWidth = useWindowWidth();
@@ -86,26 +62,26 @@ function Menu() {
     // Gestisco le animazioni di smontaggio componente e reindirizzamento
     const [crossClosed, setCrossClosed] = useState(false)
     const handleClick = (link) => {
-            setCrossClosed(true);
-            gsap.to(overlayRef.current, {
-                backgroundColor: 'rgba(0, 0, 0, 0)',
-                duration: 0.7
-            });
-            gsap.to(".field", {
-                x: 400,
-                duration: 0.4,
-                ease: "power3.out",
-                stagger: -0.1
-            });
-            gsap.to(whitePanelRef.current, {
-                opacity: 0,
-                duration: 1,
-                delay: 0.3
-            });
-            setTimeout(() => {
-                setBurger(false)
-                link !== 'close' && router.push(link)
-            }, 1300);
+        setCrossClosed(true);
+        gsap.to(overlayRef.current, {
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            duration: 0.7
+        });
+        gsap.to(".field", {
+            x: 400,
+            duration: 0.4,
+            ease: "power3.out",
+            stagger: -0.1
+        });
+        gsap.to(whitePanelRef.current, {
+            opacity: 0,
+            duration: 1,
+            delay: 0.3
+        });
+        setTimeout(() => {
+            setBurger(false)
+            link !== 'close' && router.push(link)
+        }, 1300);
     }
 
     // imposto crossClosed di nuovo falso quando il componete viene smontato
@@ -114,6 +90,13 @@ function Menu() {
             setCrossClosed(false)
         }
     }, [])
+
+    // Imposto il cambio di lingua
+    const pathname = usePathname();
+    const switchLanguage = (newLang) => {
+        const newPath = pathname.replace(`/${lng}`, `/${newLang}`);
+        window.location.href = (newPath)
+    }
 
     return (
         <div ref={overlayRef} className='fixed inset-0 bg-black bg-opacity-80 flex justify-end z-10'>
@@ -126,6 +109,10 @@ function Menu() {
                         })
                     }
                 </ul>
+                <div className='mt-32 flex gap-2 text-3xl'>
+                    <button onClick={() => switchLanguage('fr')} className={`cursor-pointer rounded p-2 ${lng === 'fr' && 'border'}`}>🇫🇷</button>
+                    <button onClick={() => switchLanguage('it')} className={`cursor-pointer rounded p-2 ${lng === 'it' && 'border'}`}>🇮🇹</button>
+                </div>
             </div>
         </div>
     )

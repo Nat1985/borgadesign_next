@@ -1,12 +1,12 @@
 import React from 'react'
 import SmoothModal from '../../components/SmoothModal'
-import OpacityEntryWrapper from '@/app/components/pagesSections/OpacityEntryWrapper'
-import SlideEntryWrapper from '@/app/components/pagesSections/SlideEntryWrapper'
-import PageContainer from '@/app/components/PageContainer'
+import OpacityEntryWrapper from '../../components/pagesSections/OpacityEntryWrapper'
+import SlideEntryWrapper from '../../components/pagesSections/SlideEntryWrapper'
+import PageContainer from '../../components/PageContainer'
 import Image from 'next/image'
-import NewGrid from '@/app/components/pagesSections/NewGrid'
-import QuadrupleImage from '@/app/components/pagesSections/QuadrupleImage'
-import Footer from '@/app/components/footer/Footer'
+import NewGrid from '../../components/pagesSections/NewGrid'
+import QuadrupleImage from '../../components/pagesSections/QuadrupleImage'
+import Footer from '../../components/footer/Footer'
 
 function SallesDeBain() {
     const imagesArray = [

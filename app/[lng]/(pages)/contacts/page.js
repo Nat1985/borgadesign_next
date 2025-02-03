@@ -1,5 +1,5 @@
-import PageContainer from '@/app/components/PageContainer'
-import SmoothModal from '@/app/components/SmoothModal'
+import PageContainer from '../../components/PageContainer'
+import SmoothModal from '../../components/SmoothModal'
 import React from 'react'
 
 function page() {
