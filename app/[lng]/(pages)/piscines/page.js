@@ -58,7 +58,7 @@ function Piscines({ params }) {
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/piscines/page2.jpg" width={300} height={300} layout="responsive" className="post-image" />
+                <Image src={imagesArray[5]} width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
@@ -137,7 +137,7 @@ function Piscines({ params }) {
 
             <OpacityEntryWrapper>
                 <DoubleImage image1={imagesArray[0]} image2={imagesArray[1]} />
-                <TripleImage image1={imagesArray[3]} image2={imagesArray[4]} image3={imagesArray[5]} />
+                <TripleImage image1={imagesArray[3]} image2={imagesArray[4]} image3="/images/pages/piscines/page2.jpg" />
             </OpacityEntryWrapper>
 
             <OpacityEntryWrapper>

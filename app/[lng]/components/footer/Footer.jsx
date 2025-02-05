@@ -7,7 +7,7 @@ function Footer({ params }) {
     const { lng } = params;
     const t = getDictionary(lng);
     return (
-        <div className='w-full flex-col bg-[#231f20]'>
+        <div className='w-full flex-col bg-[#231f20] mt-16'>
             <div className='w-full flex justify-center pt-16'>
                 <Link href="mailto:info@borgamarmi.it"><MainButton text={t.Footer.contact} isTextWhite /></Link>
             </div>

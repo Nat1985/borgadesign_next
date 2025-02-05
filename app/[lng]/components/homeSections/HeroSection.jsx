@@ -41,7 +41,8 @@ const HeroSection = ({ title, text, image, link, delay, buttonText }) => {
             ease: "power1.inOut"
         });
         setTimeout(() => {
-            router.push(link)
+            /* router.push(link) */
+            window.location.href = link;
         }, 1000)
     }
 
