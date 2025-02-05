@@ -20,7 +20,7 @@ export default function Home({ params }) {
           title={t.Homepage.history.title}
           text={t.Homepage.history.text}
           image='/images/hero/histoire/1.jpg'
-          link="/histoire"
+          link={`/${lng}/histoire`}
           delay={1}
           buttonText={t.Homepage.history.buttonText}
         />
@@ -34,7 +34,7 @@ export default function Home({ params }) {
             '/images/hero/sols-et-murs/2.jpg',
             '/images/hero/sols-et-murs/3.jpg'
           ]}
-          link="/sols-et-murs"
+          link={`/${lng}/sols-et-murs`}
           delay={1.3}
           buttonText={t.Homepage.floorAndWalls.buttonText}
         />
@@ -48,7 +48,7 @@ export default function Home({ params }) {
             '/images/hero/salles-de-bain/2.jpg',
             '/images/hero/salles-de-bain/3.jpg'
           ]}
-          link="/salle-de-bain"
+          link={`/${lng}/salle-de-bain`}
           delay={1.6}
           buttonText={t.Homepage.bathroom.buttonText}
         />
@@ -62,7 +62,7 @@ export default function Home({ params }) {
             '/images/hero/cuisines/2.jpg',
             '/images/hero/cuisines/3.jpg'
           ]}
-          link="/cuisines"
+          link={`/${lng}/cuisine`}
           delay={1.9}
           buttonText={t.Homepage.kitchen.buttonText}
         />
@@ -76,7 +76,7 @@ export default function Home({ params }) {
             '/images/hero/piscines/2.jpg',
             '/images/hero/piscines/3.jpg'
           ]}
-          link="/piscines"
+          link={`/${lng}/piscines`}
           delay={1.2}
           buttonText={t.Homepage.swimmingPools.buttonText}
         />
@@ -90,7 +90,7 @@ export default function Home({ params }) {
             '/images/hero/materiaux-et-finitions/2.jpg',
             '/images/hero/materiaux-et-finitions/3.jpg'
           ]}
-          link="/materiaux-et-finitions"
+          link={`/${lng}/materiaux-et-finitions`}
           delay={1.5}
           buttonText={t.Homepage.materialsAndFinisches.buttonText}
         />
@@ -100,7 +100,7 @@ export default function Home({ params }) {
           title={t.Homepage.projects.title}
           text={t.Homepage.projects.text}
           image='/images/hero/realisations/1.jpg'
-          link="/realisations"
+          link={`/${lng}/realisations`}
           delay={1.5}
           buttonText={t.Homepage.projects.buttonText}
         />
@@ -114,7 +114,7 @@ export default function Home({ params }) {
             '/images/hero/design-interieur/2.jpg',
             '/images/hero/design-interieur/3.jpg'
           ]}
-          link="/design-interieur"
+          link={`/${lng}/design-interieur`}
           delay={1.8}
           buttonText={t.Homepage.interiorDesign.buttonText}
         />
