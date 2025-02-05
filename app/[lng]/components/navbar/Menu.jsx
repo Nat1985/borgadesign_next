@@ -124,7 +124,7 @@ function Menu() {
             {/* Panel */}
             <div ref={whitePanelRef} className={`absolute right-0 top-0 bottom-0 bg-[#231f20] ${windowWidth <= 768 ? 'left-0' : 'w-96'} flex flex-col justify-start items-center pt-16 pb-4`}>
                 {/* Menu */}
-                <ul ref={containerRef} className='text-white text-3xl text-center flex flex-col gap-4 md:gap-4'>
+                <ul ref={containerRef} className='text-white text-xl md:text-3xl text-center flex flex-col gap-4 md:gap-4'>
                     {
                         links.map((element, index) => {
                             return <li key={index} className='field font-extralight hover:text-rose-700 cursor-pointer' onClick={() => handleClick(element.link)}>{element.label}</li>
@@ -134,15 +134,15 @@ function Menu() {
                 <div className='flex flex-col flex-grow justify-end gap-8'>
                     {/* Scarica brochure */}
                     <div ref={brochureRef} className='w-full flex flex-col items-center'>
-                        <div className='text-white mb-4'>{t.Navbar.downloadBrochure}</div>
-                        <div className='flex flex-col text-3xl gap-2'>
-                            <div className='overflow-hidden rounded cursor-pointer'><a href="/pdf/borga.pdf"><Image src="/images/borga.png" width={200} height={0} /></a></div>
-                            <div className='overflow-hidden rounded cursor-pointerì'><a href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={200} height={0} /></a></div>
+                        <h4 className='text-white mb-4'>{t.Navbar.downloadBrochure}</h4>
+                        <div className='flex flex-col text-3xl gap-4 md:gap-2'>
+                            <div className='overflow-hidden rounded cursor-pointer'><a href="/pdf/borga.pdf"><Image src="/images/borga.png" width={100} height={0} /></a></div>
+                            <div className='overflow-hidden rounded cursor-pointer'><a href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={100} height={0} /></a></div>
                         </div>
                     </div>
                     {/* Seleziona lingua */}
                     <div ref={languageRef} className='w-full flex flex-col items-center justify-end pb-8 gap-2'>
-                        <div className='text-white'>{t.Navbar.selectLanguage}</div>
+                        <h4 className='text-white'>{t.Navbar.selectLanguage}</h4>
                         <div className='flex gap-2 text-3xl'>
                             <button onClick={() => switchLanguage('fr')} className={`cursor-pointer rounded p-2 ${lng === 'fr' && 'border'}`}>🇫🇷</button>
                             <button onClick={() => switchLanguage('it')} className={`cursor-pointer rounded p-2 ${lng === 'it' && 'border'}`}>🇮🇹</button>
