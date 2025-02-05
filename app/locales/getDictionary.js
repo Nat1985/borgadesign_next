@@ -1,9 +1,11 @@
 import fr from './fr.json';
 import it from './it.json';
+import en from './en.json';
 
 const translations = {
     fr,
-    it
+    it,
+    en
 };
 
 export function getDictionary(locale) {

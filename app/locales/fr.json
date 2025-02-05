@@ -9,7 +9,9 @@
         "materialsAndFinisches": "Matériaux et Finitions",
         "projects": "Réalisations",
         "interiorDesign": "Design d’Intérieur",
-        "contacts": "Contacts"
+        "contacts": "Contacts",
+        "selectLanguage": "Sélectionnez la langue",
+        "downloadBrochure": "Découvrez nos catalogues"
     },
     "Homepage": {
         "history": {
@@ -158,5 +160,17 @@
         "title": "Design d’Intérieur",
         "first": "Borga Design est fier de présenter Atelier Plus Montecarlo, notre spin-off dédié exclusivement au design d’intérieurs en marbre. Située au cœur de Monte-Carlo, cette nouvelle entité est née pour répondre aux besoins les plus sophistiqués d'une clientèle internationale. Atelier Plus Montecarlo se consacre à la conception et à la réalisation d’intérieurs luxueux, avec un accent particulier sur les revêtements, sols, plans de cuisine et de salle de bain en marbre raffiné.",
         "second": "Grâce à notre expérience de plusieurs décennies et à la collaboration avec les meilleurs architectes et designers du secteur, Atelier Plus Montecarlo propose des solutions sur mesure pour des projets résidentiels et commerciaux haut de gamme, alliant savoir-faire artisanal italien et innovation technologique. L'excellence des matériaux, combinée à un service personnalisé, fait de chaque projet une œuvre unique et inimitable."
+    },
+    "Footer": {
+        "contact": "contactez-nous maintenant",
+        "title": "Showroom Borga Design",
+        "street": "Via Armea, 135",
+        "city": "Sanremo (IM) 18038 Italie",
+        "tel": "Tel: +39 335 5921319",
+        "fax": "Fax: +39 0184 514070",
+        "email": "Email: info@borgamarmi.it",
+        "openingHours": "Horaires d’ouverture",
+        "week": "Lundi - Vendredi : 08:00 - 12:00 / 14:00 - 18:30",
+        "weekEnd": "Samedi : 09:00 - 12:00"
     }
 }

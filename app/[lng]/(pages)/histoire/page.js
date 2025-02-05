@@ -74,7 +74,7 @@ function Histoire({ params }) {
                 <NewGrid array={imagesArray} />
             </OpacityEntryWrapper >
 
-            <Footer />
+            <Footer params={params} />
         </PageContainer>
     )
 }

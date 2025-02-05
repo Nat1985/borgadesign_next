@@ -55,7 +55,7 @@ function DesignDInterieur({ params }) {
                 </div>
             </SlideEntryWrapper>
 
-            <Footer />
+            <Footer params={params} />
 
         </PageContainer>
     )

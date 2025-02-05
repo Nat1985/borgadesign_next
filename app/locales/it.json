@@ -9,7 +9,9 @@
         "materialsAndFinisches": "Materiali e Finiture",
         "projects": "Realizzazioni",
         "interiorDesign": "Design d’Interni",
-        "contacts": "Contatti"
+        "contacts": "Contatti",
+        "selectLanguage": "Seleziona la lingua",
+        "downloadBrochure": "Guarda i nostri cataloghi"
     },
     "Homepage": {
         "history": {
@@ -90,7 +92,7 @@
         "first": "Nel nostro showroom troverai personale qualificato che ti seguirà nella costruzione, ristrutturazione e manutenzione della tua piscina a partire dalla definizione del progetto fino alla sua realizzazione. All’interno del nostro spazio espositivo potrai trovare tutti gli accessori per la manutenzione e per la pulizia della piscina.",
         "second": "Una piscina diventa uno spazio importante all’interno dell’abitazione. Elemento di design in armonia con il giardino e con gli spazi circostanti, è anche il luogo per il relax, lo svago, lo sport, la condivisione di momenti con la famiglia o gli amici.",
         "third": "La filtrazione brevettata delle piscine Magiline ti offre una facilità e una qualità di manutenzione incomparabili. Anche il pulitore Magiline o il robot contribuiscono a mantenere l’acqua in perfetto stato. Tutto è stato pensato per ridurre il consumo di elettricità, d’acqua e di prodotti per la pulizia.",
-        "fourth": "Con le piscine Magline, dalla classica piscina alla vasca su misura, immaginiamo con te tutte le soluzioni possibiliper offrirti una piscina intelligente.",
+        "fourth": "Con le piscine Magline, dalla classica piscina alla vasca su misura, immaginiamo con te tutte le soluzioni possibili per offrirti una piscina intelligente.",
         "fifth": "E poi le realizziamo un’infinita gamma di scelte estetiche e svariati accessori per una piscina unica, quella dei tuoi sogni.",
         "sixth": "Un concept di struttura modulare che permette di avere una piscina autoportante, senza pali di sostegno, né rinforzi, non soggetta a putrefazione né a corrosione, per una longevità garantita. Grazie a questa tecnologia, la realizzazione è facile e veloce; uno scavo minimo (15 cm in più) e una costruzione in soli 6-8 giorni.",
         "seventh": "Abbiamo anche delle varianti da proporti: MAGI’style. La piscina fuoriterra!",
@@ -155,5 +157,17 @@
         "title": "Design d’Interni",
         "first": "Borga Design è orgogliosa di presentare Atelier Plus Montecarlo, il nostro spin-off dedicato esclusivamente al design d’interni in marmo. Situata nel cuore di Monte-Carlo, questa nuova entità è nata per soddisfare le esigenze più sofisticate di una clientela internazionale. Atelier Plus Montecarlo si dedica alla progettazione e realizzazione di interni di lusso, con un’attenzione particolare ai rivestimenti, pavimenti, piani cucina e bagno in marmo pregiato.",
         "second": "Grazie alla nostra esperienza pluridecennale e alla collaborazione con i migliori architetti e designer del settore, Atelier Plus Montecarlo offre soluzioni su misura per progetti residenziali e commerciali di alto livello, unendo il know-how artigianale italiano all’innovazione tecnologica. L’eccellenza dei materiali, combinata a un servizio personalizzato, rende ogni progetto un’opera unica e inimitabile."
+    },
+    "Footer": {
+        "contact": "contattaci ora",
+        "title": "Showroom Borga Design",
+        "street": "Via Armea, 135",
+        "city": "Sanremo (IM) 18038 Italia",
+        "tel": "Tel: +39 335 5921319",
+        "fax": "Fax: +39 0184 514070",
+        "email": "Email: info@borgamarmi.it",
+        "openingHours": "Orari di apertura",
+        "week": "Lunedì - Venerdì: 08:00 - 12:00 / 14:00 - 18:30",
+        "weekEnd": "Sabato: 09:00 - 12:00"
     }
 }

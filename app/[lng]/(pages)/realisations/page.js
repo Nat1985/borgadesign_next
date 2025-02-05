@@ -38,7 +38,7 @@ function Realisations({ params }) {
                 <DoubleImage image1={imagesArray[0]} image2={imagesArray[1]} />
             </OpacityEntryWrapper>
 
-            <Footer />
+            <Footer params={params} />
 
         </PageContainer>
     )

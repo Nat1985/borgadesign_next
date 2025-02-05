@@ -1,27 +1,35 @@
+import { getDictionary } from '@/app/locales/getDictionary';
 import PageContainer from '../../components/PageContainer'
 import SmoothModal from '../../components/SmoothModal'
 import React from 'react'
+import Link from 'next/link';
+import { MainButton } from '../../components/buttons';
 
-function page() {
+function page({ params }) {
+    const { lng } = params;
+    const t = getDictionary(lng);
     return (
         <PageContainer>
             <SmoothModal time={1000} />
             <div className="flex flex-col items-center text-center">
                 <h3>
-                    Showroom Borga Design
+                    {t.Footer.title}
                 </h3>
-                <p className="p-footer">Via Armea, 135</p>
-                <p className="p-footer">Sanremo (IM) 18038 Italie</p>
-                <p className="p-footer">Tel: +39 0184 514458</p>
-                <p className="p-footer">Fax: +39 0184 514070</p>
-                <p className="p-footer">Email: info@borgamarmi.it</p>
+                <p className="p-footer">{t.Footer.street}</p>
+                <p className="p-footer">{t.Footer.city}</p>
+                <p className="p-footer">{t.Footer.tel}</p>
+                <p className="p-footer">{t.Footer.fax}</p>
+                <p className="p-footer">{t.Footer.email}</p>
             </div>
             <div className="flex flex-col items-center text-center">
                 <h3>
-                    Horaires d’ouverture
+                    {t.Footer.openingHours}
                 </h3>
-                <p>Lundi - Vendredi : 08:00 - 12:00 / 14:00 - 18:00</p>
-                <p>Samedi : 09:00 - 12:00</p>
+                <p>{t.Footer.week}</p>
+                <p>{t.Footer.weekEnd}</p>
+            </div>
+            <div className='w-full flex justify-center pt-16'>
+                <Link href="mailto:info@borgamarmi.it"><MainButton text={t.Footer.contact} /></Link>
             </div>
         </PageContainer>
     )

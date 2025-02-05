@@ -119,7 +119,7 @@ export default function Home({ params }) {
           buttonText={t.Homepage.interiorDesign.buttonText}
         />
 
-        <Footer />
+        <Footer params={params} />
       </div>
     </main>
   );

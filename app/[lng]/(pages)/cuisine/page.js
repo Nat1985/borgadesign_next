@@ -27,7 +27,7 @@ function Cuisines({ params }) {
             </div>
 
             <OpacityEntryWrapper>
-                <Image src="/images/pages/cuisines/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
+                <Image src="/images/pages/cuisines/page1.jpg" width={300} height={300} layout="responsive"className="post-image" />
             </OpacityEntryWrapper>
             <SlideEntryWrapper>
 
@@ -47,7 +47,7 @@ function Cuisines({ params }) {
             </OpacityEntryWrapper>
 
 
-            <Footer />
+            <Footer params={params} />
         </PageContainer>
     )
 }

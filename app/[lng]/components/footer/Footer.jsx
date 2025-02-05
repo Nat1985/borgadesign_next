@@ -1,26 +1,37 @@
+import { getDictionary } from '@/app/locales/getDictionary';
 import React from 'react'
+import { MainButton } from '../buttons';
+import Link from 'next/link';
 
-function Footer() {
+function Footer({ params }) {
+    const { lng } = params;
+    const t = getDictionary(lng);
     return (
-        <div className="z-10 w-full bg-[#231f20] p-8 text-white flex flex-col lg:flex-row justify-center gap-2 mt-16">
-            <div className="flex-1 flex flex-col items-center justify-center text-center border-white border-b lg:border-b-0 lg:border-r pb-8 lg:pb-0">
-                <h3>
-                    Showroom Borga Design
-                </h3>
-                <div className="p-footer">Via Armea, 135</div>
-                <div className="p-footer">Sanremo (IM) 18038 Italie</div>
-                <div className="p-footer">Tel: +39 0184 514458</div>
-                <div className="p-footer">Fax: +39 0184 514070</div>
-                <div className="p-footer">Email: info@borgamarmi.it</div>
+        <div className='w-full flex-col bg-[#231f20]'>
+            <div className='w-full flex justify-center pt-16'>
+                <Link href="mailto:info@borgamarmi.it"><MainButton text={t.Footer.contact} isTextWhite /></Link>
             </div>
-            <div className="flex-1 flex flex-col items-center justify-center text-center">
-                <h3>
-                    Horaires d’ouverture
-                </h3>
-                <div className="p-footer">Lundi - Vendredi : 08:00 - 12:00 / 14:00 - 18:30</div>
-                <div className="p-footer">Samedi : 09:00 - 12:00</div>
+            <div className="z-10 w-full p-8 text-white flex flex-col lg:flex-row justify-center gap-2 mt-16">
+                <div className="flex-1 flex flex-col items-center justify-center text-center border-white border-b lg:border-b-0 lg:border-r pb-8 lg:pb-0">
+                    <h3>
+                        {t.Footer.title}
+                    </h3>
+                    <div className="p-footer">{t.Footer.street}</div>
+                    <div className="p-footer">{t.Footer.city}</div>
+                    <div className="p-footer">{t.Footer.tel}</div>
+                    <div className="p-footer">{t.Footer.fax}</div>
+                    <div className="p-footer">{t.Footer.email}</div>
+                </div>
+                <div className="flex-1 flex flex-col items-center justify-center text-center">
+                    <h3>
+                        {t.Footer.openingHours}
+                    </h3>
+                    <div className="p-footer">{t.Footer.week}</div>
+                    <div className="p-footer">{t.Footer.weekEnd}</div>
+                </div>
             </div>
         </div>
+
     )
 }
 

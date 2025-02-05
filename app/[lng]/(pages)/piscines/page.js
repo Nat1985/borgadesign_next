@@ -8,6 +8,7 @@ import DoubleImage from '../../components/pagesSections/DoubleImage'
 import TripleImage from '../../components/pagesSections/TripleImage'
 import Footer from '../../components/footer/Footer'
 import { getDictionary } from '@/app/locales/getDictionary'
+import Link from 'next/link'
 
 function Piscines({ params }) {
     const { lng } = params;
@@ -35,6 +36,7 @@ function Piscines({ params }) {
         "/images/pages/piscines/new/20.jpeg",
         "/images/pages/piscines/new/22.jpeg",
         "/images/pages/piscines/new/7.jpeg",
+        "/images/pages/piscines/new/19.jpeg",
     ]
     return (
         <PageContainer isDark>
@@ -75,7 +77,7 @@ function Piscines({ params }) {
                 <p>{t.SwimmingPool.fifth}</p>
             </SlideEntryWrapper>
 
-            <TripleImage image1={imagesArray[11]} image2={imagesArray[12]} image3={imagesArray[13]} />
+            <TripleImage image1={imagesArray[11]} image2={imagesArray[22]} image3={imagesArray[13]} />
 
             <SlideEntryWrapper>
                 <p>{t.SwimmingPool.sixth}</p>
@@ -133,7 +135,6 @@ function Piscines({ params }) {
                 <p>{t.SwimmingPool.seventeenth}</p>
             </SlideEntryWrapper>
 
-
             <OpacityEntryWrapper>
                 <DoubleImage image1={imagesArray[0]} image2={imagesArray[1]} />
                 <TripleImage image1={imagesArray[3]} image2={imagesArray[4]} image3={imagesArray[5]} />
@@ -142,15 +143,16 @@ function Piscines({ params }) {
             <OpacityEntryWrapper>
                 <Image src={imagesArray[21]} width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
-            
-            <div className="mt-8">
-                <OpacityEntryWrapper>
-                    <Image src={imagesArray[2]} width={300} height={300} layout="responsive" className="post-image" />
-                </OpacityEntryWrapper>
-            </div>
 
+            <Link href="https://www.piscines-magiline.fr/pisciniste-magasin-piscines/borga-design/">
+                <div className="mt-8">
+                    <OpacityEntryWrapper>
+                        <Image src={imagesArray[2]} width={300} height={300} layout="responsive" className="post-image" />
+                    </OpacityEntryWrapper>
+                </div>
+            </Link>
 
-            <Footer />
+            <Footer params={params} />
 
         </PageContainer>
     )

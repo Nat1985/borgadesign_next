@@ -6,7 +6,7 @@ export function middleware(req) {
     const { pathname } = req.nextUrl;
 
     // Lingue supportate
-    const locales = ["fr", "it"];
+    const locales = ["fr", "it", "en"];
 
     // Esclude asset statici
     if (

@@ -50,7 +50,8 @@ const SlideSection = ({ title, text, imagesArray, link, delay, buttonText }) => 
             ease: "power1.inOut"
         });
         setTimeout(() => {
-            router.push(link)
+            /* router.push(link) */
+            window.location.href = link;
         }, 1000)
     }
 

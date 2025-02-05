@@ -47,7 +47,7 @@ function SolsEtMurs({ params }) {
                 <NewGrid array={imagesArray} />
             </OpacityEntryWrapper >
 
-            <Footer />
+            <Footer params={params} />
         </PageContainer>
     )
 }
