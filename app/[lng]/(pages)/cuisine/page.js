@@ -6,8 +6,11 @@ import Image from 'next/image'
 import PageContainer from '../../components/PageContainer'
 import NewGrid from '../../components/pagesSections/NewGrid'
 import Footer from '../../components/footer/Footer'
+import { getDictionary } from '@/app/locales/getDictionary'
 
-function Cuisines() {
+function Cuisines({ params }) {
+    const { lng } = params;
+    const t = getDictionary(lng);
     const imagesArray = [
         "/images/pages/cuisines/1.jpg",
         "/images/pages/cuisines/2.jpg",
@@ -20,22 +23,15 @@ function Cuisines() {
         <PageContainer>
             <SmoothModal time={1000} />
             <div className="w-full post-image">
-                <h2 className="h2-over-image">Cuisine</h2>
+                <h2 className="h2-over-image">{t.Kitchen.title}</h2>
             </div>
-
 
             <OpacityEntryWrapper>
                 <Image src="/images/pages/cuisines/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
             <SlideEntryWrapper>
 
-                <p>
-                    Borga Design est spécialisée dans la conception et la réalisation de cuisines sur mesure en marbre,
-                    granit, quartz et pierres semi-précieuses. Nos cuisines allient élégance et fonctionnalité, avec des
-                    matériaux sélectionnés pour garantir beauté, résistance et longévité. Nous proposons des solutions
-                    complètes incluant des plans de travail, des îlots centraux, des crédences et des revêtements, conçus
-                    pour s'intégrer parfaitement au design de votre maison.
-                </p>
+                <p>{t.Kitchen.first}</p>
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
@@ -43,14 +39,7 @@ function Cuisines() {
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
-                <p>
-                    Chaque cuisine est personnalisée en fonction des besoins du client, avec des finitions raffinées et
-                    des détails qui mettent en valeur la qualité des matériaux choisis. Nous collaborons avec des
-                    architectes et des designers pour créer des cuisines uniques, qui représentent la parfaite union entre
-                    l'artisanat italien et le design moderne. Grâce à notre expérience, nous sommes en mesure de
-                    proposer des cuisines de luxe, conçues pour devenir le cœur de la maison, où beauté et
-                    fonctionnalité se rencontrent.
-                </p>
+                <p>{t.Kitchen.second}</p>
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>

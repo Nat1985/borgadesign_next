@@ -18,6 +18,7 @@ function Menu() {
     const { setBurger, isSubOpen } = useMainStore();
     const router = useRouter();
 
+    // QUESTI LINK VERRANO SOSTITUITI DALLA VOCE LINK TRADOTTA
     const links = [
         { label: t.Navbar.home, link: `/${lng}` },
         { label: t.Navbar.history, link: `/${lng}/histoire` },
@@ -29,7 +30,6 @@ function Menu() {
         { label: t.Navbar.projects, link: `/${lng}/realisations` },
         { label: t.Navbar.interiorDesign, link: `/${lng}/design-interieur` },
         { label: t.Navbar.contacts, link: `/${lng}/contacts` },
-
     ]
     const windowWidth = useWindowWidth();
 
@@ -80,7 +80,11 @@ function Menu() {
         });
         setTimeout(() => {
             setBurger(false)
-            link !== 'close' && router.push(link)
+            console.log('link: ', link)
+            if (link !== 'close') {
+                router.push(link);
+                /* window.location.href = link */
+            }
         }, 1300);
     }
 

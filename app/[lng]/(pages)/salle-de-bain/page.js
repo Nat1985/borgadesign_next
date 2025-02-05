@@ -7,8 +7,11 @@ import Image from 'next/image'
 import NewGrid from '../../components/pagesSections/NewGrid'
 import QuadrupleImage from '../../components/pagesSections/QuadrupleImage'
 import Footer from '../../components/footer/Footer'
+import { getDictionary } from '@/app/locales/getDictionary'
 
-function SallesDeBain() {
+function SallesDeBain({ params }) {
+    const { lng } = params;
+    const t = getDictionary(lng);
     const imagesArray = [
         "/images/pages/salles-du-bain/1.jpg",
         "/images/pages/salles-du-bain/2.jpg",
@@ -21,7 +24,7 @@ function SallesDeBain() {
         <PageContainer isDark>
             <SmoothModal time={1000} />
             <div className="w-full post-image">
-                <h2 className="h2-over-image">Salle de Bain</h2>
+                <h2 className="h2-over-image">{t.Bathroom.title}</h2>
             </div>
 
             <OpacityEntryWrapper>
@@ -29,13 +32,7 @@ function SallesDeBain() {
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
-                <p>
-                    Borga Design est un leader dans la réalisation de salles de bains de luxe. Avec plus d'un siècle
-                    d'expérience, nous offrons des aménagements et des sols de salles de bains en marbre, granit et
-                    matériaux composites. Nous collaborons avec les meilleures marques italiennes pour des solutions
-                    complètes, de la conception à l'installation. Nous réalisons des lavabos, plans de travail et autres
-                    éléments sur mesure, avec des finitions exclusives.
-                </p>
+                <p>{t.Bathroom.first}</p>
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
@@ -49,11 +46,7 @@ function SallesDeBain() {
             </div>
 
             <SlideEntryWrapper>
-                <p>
-                    Dans notre showroom, vous trouverez une large gamme de meubles, mosaïques, sanitaires,
-                    robinetteries et accessoires, pour créer la salle de bains de vos rêves. Chaque élément peut être
-                    personnalisé pour créer un environnement unique et raffiné.
-                </p>
+                <p>{t.Bathroom.second}</p>
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>

@@ -55,7 +55,6 @@ const HeroSection = ({ title, text, image, link, delay, buttonText }) => {
                     alt='Hero Image'
                     layout="fill"  // Rende l'immagine responsiva, occupa tutto lo spazio del contenitore
                     objectFit="cover"  // Assicura che l'immagine mantenga il suo rapporto d'aspetto
-                    lazyBoundary="100px"  // Inizia a caricare l'immagine quando si trova a 300px dalla viewport
                 />
             </div>
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white">

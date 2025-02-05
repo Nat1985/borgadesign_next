@@ -70,7 +70,6 @@ const SlideSection = ({ title, text, imagesArray, link, delay, buttonText }) => 
                         layout="fill"  // Rende l'immagine responsiva, occupa tutto lo spazio del contenitore
                         objectFit="cover"  // Assicura che l'immagine mantenga il suo rapporto d'aspetto
                         priority={index === 0}  // Carica in modo prioritario la prima immagine
-                        lazyBoundary="100px"  // Inizia a caricare l'immagine quando si trova a 300px dalla viewport
                     />
                 </div>
             ))}

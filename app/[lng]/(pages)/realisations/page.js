@@ -6,8 +6,11 @@ import OpacityEntryWrapper from '../../components/pagesSections/OpacityEntryWrap
 import Image from 'next/image'
 import DoubleImage from '../../components/pagesSections/DoubleImage'
 import Footer from '../../components/footer/Footer'
+import { getDictionary } from '@/app/locales/getDictionary'
 
-function Realisations() {
+function Realisations({ params }) {
+    const { lng } = params;
+    const t = getDictionary(lng);
     const imagesArray = [
         "/images/pages/realisations/page2.jpg",
         "/images/pages/realisations/page3.jpg"
@@ -16,7 +19,7 @@ function Realisations() {
         <PageContainer isDark>
             <SmoothModal time={1000} />
             <div className="w-full post-image">
-                <h2 className="h2-over-image">Réalisations</h2>
+                <h2 className="h2-over-image">{t.Projects.title}</h2>
             </div>
 
             <OpacityEntryWrapper>
@@ -24,25 +27,11 @@ function Realisations() {
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
-                <p>
-                    Borga Design a une vaste expérience dans la réalisation d'œuvres en marbre et en pierre naturelle.
-                    Parmi nos projets les plus prestigieux, on retrouve:
-                </p>
+                <p>{t.Projects.first}</p>
                 <ul className="post-image ul-disc pl-8 pb-8">
-                    <li>Balustrades</li>
-                    <li>Colonnes</li>
-                    <li>Fontaines</li>
-                    <li>Mosaïques</li>
-                    <li>Parquet</li>
-                    <li>Pierres semi-précieuses</li>
-                    <li>Plans de travail et murs rétroéclairés</li>
-                    <li>Escaliers</li>
-                    <li>Yachting</li>
+                    {t.Projects.second?.map((element, index) => <li key={index}>{element}</li>)}
                 </ul>
-                <p>
-                    Chaque œuvre est réalisée avec soin et précision, pour créer des éléments décoratifs et fonctionnels
-                    d'une beauté exceptionnelle.
-                </p>
+                <p>{t.Projects.third}</p>
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>

@@ -6,8 +6,11 @@ import Image from 'next/image'
 import OpacityEntryWrapper from '../../components/pagesSections/OpacityEntryWrapper'
 import NewGrid from '../../components/pagesSections/NewGrid'
 import Footer from '../../components/footer/Footer'
+import { getDictionary } from '@/app/locales/getDictionary'
 
-function SolsEtMurs() {
+function SolsEtMurs({ params }) {
+    const { lng } = params;
+    const t = getDictionary(lng);
     const imagesArray = [
         "/images/pages/sols-et-murs/1.jpg",
         "/images/pages/sols-et-murs/2.jpg",
@@ -20,22 +23,16 @@ function SolsEtMurs() {
         <PageContainer>
             <SmoothModal time={1000} />
             <div className="w-full post-image">
-                <h2 className="h2-over-image">Sols et Murs</h2>
+                <h2 className="h2-over-image">{t.FloorAndWalls.title}</h2>
             </div>
-            
+
 
             <OpacityEntryWrapper>
                 <Image src="/images/pages/sols-et-murs/page1.jpg" width={300} height={300} layout="responsive" className="post-image" />
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
-                <p>
-                    Borga Design réalise des sols et revêtements en marbre, granit et pierres naturelles pour un large
-                    éventail d'applications. Nous créons des sols intérieurs et extérieurs, des revêtements, des escaliers,
-                    des seuils et appuis de fenêtre pour des projets publics et privés tels que des banques, des églises,
-                    des hôpitaux et des habitations de luxe. Nous offrons un service « clé en main », suivant toutes les
-                    étapes, du choix des matériaux à la pose, sans stress pour le client.
-                </p>
+                <p>{t.FloorAndWalls.first}</p>
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>
@@ -43,13 +40,7 @@ function SolsEtMurs() {
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper fromDx>
-                <p>
-                    Notre équipe d'experts est spécialisée dans la pose de sols complexes tels que la coupe sur mesure,
-                    la pose en livre ouvert, modulgranite et opus romain. Les matériaux sont sélectionnés dans les
-                    meilleures carrières du monde pour garantir un résultat final impeccable. Nous collaborons avec des
-                    architectes et des designers pour choisir les solutions les plus adaptées, avec une main-d'œuvre
-                    qualifiée qui sait mettre en valeur les nuances naturelles des pierres.
-                </p>
+                <p>{t.FloorAndWalls.second}</p>
             </SlideEntryWrapper>
 
             <OpacityEntryWrapper>

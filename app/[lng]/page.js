@@ -1,3 +1,4 @@
+import { getDictionary } from "../locales/getDictionary";
 import { MainButton } from "./components/buttons";
 import Footer from "./components/footer/Footer";
 import FullModal from "./components/FullModal";
@@ -8,24 +9,26 @@ import SmoothModal from "./components/SmoothModal";
 import Image from "next/image";
 
 export default function Home({ params }) {
+  const { lng } = params;
+  const t = getDictionary(lng);
   return (
     <main className="h-screen pt-[116px]">
       <SmoothModal time={1000} />
       <div className="w-full flex flex-col">
         {/* Histoire */}
         < HeroSection
-          title="BORGA DESIGN"
-          text="Tradition et Savoir-Faire Artisanal depuis 1891"
+          title={t.Homepage.history.title}
+          text={t.Homepage.history.text}
           image='/images/hero/histoire/1.jpg'
           link="/histoire"
           delay={1}
-          buttonText="Découvrez notre histoire"
+          buttonText={t.Homepage.history.buttonText}
         />
 
         {/* Sols et Murs */}
         <SlideSection
-          title="SOLS ET MURS"
-          text="Revêtements en marbre, granit et pierres naturelles"
+          title={t.Homepage.floorAndWalls.title}
+          text={t.Homepage.floorAndWalls.text}
           imagesArray={[
             '/images/hero/sols-et-murs/1.jpg',
             '/images/hero/sols-et-murs/2.jpg',
@@ -33,13 +36,13 @@ export default function Home({ params }) {
           ]}
           link="/sols-et-murs"
           delay={1.3}
-          buttonText="En savoir plus sur nous"
+          buttonText={t.Homepage.floorAndWalls.buttonText}
         />
 
         {/* Salles de Bain */}
         <SlideSection
-          title="SALLE DE BAIN"
-          text="Leader dans la réalisation de salles de bains de luxe"
+          title={t.Homepage.bathroom.title}
+          text={t.Homepage.bathroom.text}
           imagesArray={[
             '/images/hero/salles-de-bain/1.jpg',
             '/images/hero/salles-de-bain/2.jpg',
@@ -47,13 +50,13 @@ export default function Home({ params }) {
           ]}
           link="/salle-de-bain"
           delay={1.6}
-          buttonText="En savoir plus sur nous"
+          buttonText={t.Homepage.bathroom.buttonText}
         />
 
         {/* Cuisines */}
         <SlideSection
-          title="CUSINES"
-          text="Réalisation de cuisines sur mesure en marbre"
+          title={t.Homepage.kitchen.title}
+          text={t.Homepage.kitchen.text}
           imagesArray={[
             '/images/hero/cuisines/1.jpg',
             '/images/hero/cuisines/2.jpg',
@@ -61,13 +64,13 @@ export default function Home({ params }) {
           ]}
           link="/cuisines"
           delay={1.9}
-          buttonText="En savoir plus sur nous"
+          buttonText={t.Homepage.kitchen.buttonText}
         />
 
         {/* Piscines */}
         <SlideSection
-          title="PISCINES"
-          text="Distributeurs officiels de Magiline"
+          title={t.Homepage.swimmingPools.title}
+          text={t.Homepage.swimmingPools.text}
           imagesArray={[
             '/images/hero/piscines/1.jpg',
             '/images/hero/piscines/2.jpg',
@@ -75,13 +78,13 @@ export default function Home({ params }) {
           ]}
           link="/piscines"
           delay={1.2}
-          buttonText="En savoir plus sur nous"
+          buttonText={t.Homepage.swimmingPools.buttonText}
         />
 
         {/* Matériaux et Finitions */}
         <SlideSection
-          title="MATÉRIAUX ET FINITIONS"
-          text="Sélection de matériaux de haute qualité"
+          title={t.Homepage.materialsAndFinisches.title}
+          text={t.Homepage.materialsAndFinisches.text}
           imagesArray={[
             '/images/hero/materiaux-et-finitions/1.jpg',
             '/images/hero/materiaux-et-finitions/2.jpg',
@@ -89,23 +92,23 @@ export default function Home({ params }) {
           ]}
           link="/materiaux-et-finitions"
           delay={1.5}
-          buttonText="En savoir plus sur nous"
+          buttonText={t.Homepage.materialsAndFinisches.buttonText}
         />
 
         {/* Réalisations */}
         <HeroSection
-          title="RÉALISATION"
-          text="Atelier à Sanremo, avec une main-d’œuvre hautement qualifiée et des machines à la pointe de la technologie"
+          title={t.Homepage.projects.title}
+          text={t.Homepage.projects.text}
           image='/images/hero/realisations/1.jpg'
           link="/realisations"
           delay={1.5}
-          buttonText="En savoir plus sur nous"
+          buttonText={t.Homepage.projects.buttonText}
         />
 
         {/* Design d’Intérieur */}
         <SlideSection
-          title="DESIGN D’INTÉRIEUR"
-          text="Atelier Plus Montecarlo: Design d’Intérieurs en Marbre"
+          title={t.Homepage.interiorDesign.title}
+          text={t.Homepage.interiorDesign.text}
           imagesArray={[
             '/images/hero/design-interieur/1.jpg',
             '/images/hero/design-interieur/2.jpg',
@@ -113,7 +116,7 @@ export default function Home({ params }) {
           ]}
           link="/design-interieur"
           delay={1.8}
-          buttonText="En savoir plus sur nous"
+          buttonText={t.Homepage.interiorDesign.buttonText}
         />
 
         <Footer />

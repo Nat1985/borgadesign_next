@@ -10,5 +10,153 @@
         "projects": "Réalisations",
         "interiorDesign": "Design d’Intérieur",
         "contacts": "Contacts"
+    },
+    "Homepage": {
+        "history": {
+            "title": "BORGA DESIGN",
+            "text": "Tradition et Savoir-Faire Artisanal depuis 1891",
+            "link": "/histoire",
+            "buttonText": "Découvrez notre histoire"
+        },
+        "floorAndWalls": {
+            "title": "SOLS ET MURS",
+            "text": "Revêtements en marbre, granit et pierres naturelles",
+            "link": "/sols-et-murs",
+            "buttonText": "En savoir plus sur nous"
+        },
+        "bathroom": {
+            "title": "SALLE DE BAIN",
+            "text": "Leader dans la réalisation de salles de bains de luxe",
+            "link": "/salle-de-bain",
+            "buttonText": "En savoir plus sur nous"
+        },
+        "kitchen": {
+            "title": "CUSINES",
+            "text": "Réalisation de cuisines sur mesure en marbre",
+            "link": "/cuisines",
+            "buttonText": "En savoir plus sur nous"
+        },
+        "swimmingPools": {
+            "title": "PISCINES",
+            "text": "Distributeurs officiels de Magiline",
+            "link": "/piscines",
+            "buttonText": "En savoir plus sur nous"
+        },
+        "materialsAndFinisches": {
+            "title": "MATÉRIAUX ET FINITIONS",
+            "text": "Sélection de matériaux de haute qualité",
+            "link": "/materiaux-et-finitions",
+            "buttonText": "En savoir plus sur nous"
+        },
+        "projects": {
+            "title": "RÉALISATION",
+            "text": "Atelier à Sanremo, avec une main-d’œuvre hautement qualifiée et des machines à la pointe de la technologie",
+            "link": "/realisations",
+            "buttonText": "En savoir plus sur nous"
+        },
+        "interiorDesign": {
+            "title": "DESIGN D’INTÉRIEUR",
+            "text": "Atelier Plus Montecarlo: Design d’Intérieurs en Marbre",
+            "link": "/design-interieur",
+            "buttonText": "En savoir plus sur nous"
+        }
+    },
+    "History": {
+        "title": "Histoire",
+        "first": "Borga Marmi, « La Passion Italienne pour la Pierre », est active à Sanremo depuis 1891. Cette année-là, Domenico Borga, né à Nice en 1864, arrière-arrière-grand-père des propriétaires actuels, ouvrit son premier atelier de marbre à Sanremo, suivant les traces de son père Carlo Giuseppe, présent sur la Côte d'Azur depuis 1834 en tant que tailleur de pierre reconnu. Domenico a contribué à la réalisation d'œuvres emblématiques en pierre et en marbre, telles que le Musée Océanographique de Monte-Carlo et la Villa Ormond à Sanremo.",
+        "second": "Tailleur de pierre talentueux, Domenico Borga a également participé à la restauration de la Cathédrale de San Siro en 1901. Depuis lors, le nom Borga est synonyme de tradition marbrière, avec une dévotion et une passion qui continuent de vivre à travers les générations. De nombreuses œuvres réalisées à la main par Domenico et ses successeurs sont encore visibles aujourd'hui au Cimetière Monumental de Sanremo.",
+        "third": "En 1964, sous la direction du Dr. Antonio Borga, l'entreprise a évolué en une PME avec l'agrandissement de l'atelier, des espaces d'exposition et l'acquisition de machines avancées pour le travail du marbre et du granit, tout en conservant un soin artisanal méticuleux.",
+        "fouth": "Aujourd'hui, grâce au talent pour le marbre et au goût pour le design d'Anna, combinés à l'esprit entrepreneurial de Stefano, la tradition s'est modernisée. Le savoir-faire artisanal dans le travail de la pierre s'est transmis intact, accompagné de la passion pour mettre en valeur la beauté naturelle de chaque matériau.",
+        "fifth": "Notre atelier à Sanremo offre un service professionnel et polyvalent, avec une main-d'œuvre hautement qualifiée et des machines de pointe, prêtes à réaliser tout type de projet avec la plus grande précision et qualité.",
+        "sixth": "Notre showroom de plus de 800 m² est un lieu d'inspiration, avec un vaste choix de sols en céramique, parquet et pierres naturelles, idéaux pour tout type d'environnement, du simple au luxueux, situé Via Armea 135, à Sanremo."
+    },
+    "FloorAndWalls": {
+        "title": "Sols et Murs",
+        "first": "Borga Design réalise des sols et revêtements en marbre, granit et pierres naturelles pour un large éventail d'applications. Nous créons des sols intérieurs et extérieurs, des revêtements, des escaliers, des seuils et appuis de fenêtre pour des projets publics et privés tels que des banques, des églises, des hôpitaux et des habitations de luxe. Nous offrons un service « clé en main », suivant toutes les étapes, du choix des matériaux à la pose, sans stress pour le client.",
+        "second": "Notre équipe d'experts est spécialisée dans la pose de sols complexes tels que la coupe sur mesure, la pose en livre ouvert, modulgranite et opus romain. Les matériaux sont sélectionnés dans les meilleures carrières du monde pour garantir un résultat final impeccable. Nous collaborons avec des architectes et des designers pour choisir les solutions les plus adaptées, avec une main-d'œuvre qualifiée qui sait mettre en valeur les nuances naturelles des pierres."
+    },
+    "Bathroom": {
+        "title": "Salle de Bain",
+        "first": "Borga Design est un leader dans la réalisation de salles de bains de luxe. Avec plus d'un siècle d'expérience, nous offrons des aménagements et des sols de salles de bains en marbre, granit et matériaux composites. Nous collaborons avec les meilleures marques italiennes pour des solutions complètes, de la conception à l'installation. Nous réalisons des lavabos, plans de travail et autres éléments sur mesure, avec des finitions exclusives.",
+        "second": "Dans notre showroom, vous trouverez une large gamme de meubles, mosaïques, sanitaires, robinetteries et accessoires, pour créer la salle de bains de vos rêves. Chaque élément peut être personnalisé pour créer un environnement unique et raffiné."
+    },
+    "Kitchen": {
+        "title": "Cuisine",
+        "first": "Borga Design est spécialisée dans la conception et la réalisation de cuisines sur mesure en marbre, granit, quartz et pierres semi-précieuses. Nos cuisines allient élégance et fonctionnalité, avec des matériaux sélectionnés pour garantir beauté, résistance et longévité. Nous proposons des solutions complètes incluant des plans de travail, des îlots centraux, des crédences et des revêtements, conçus pour s'intégrer parfaitement au design de votre maison.",
+        "second": "Chaque cuisine est personnalisée en fonction des besoins du client, avec des finitions raffinées et des détails qui mettent en valeur la qualité des matériaux choisis. Nous collaborons avec des architectes et des designers pour créer des cuisines uniques, qui représentent la parfaite union entre l'artisanat italien et le design moderne. Grâce à notre expérience, nous sommes en mesure de proposer des cuisines de luxe, conçues pour devenir le cœur de la maison, où beauté et fonctionnalité se rencontrent."
+    },
+    "SwimmingPool": {
+        "title": "Pisciniste Magiline BORGA DESIGN - SANREMO (IM)",
+        "first": "Dans notre showroom, vous trouverez un personnel qualifié qui vous accompagnera dans la construction, la rénovation et l’entretien de votre piscine, de la définition du projet à sa réalisation. Dans notre espace d’exposition, vous pourrez découvrir tous les accessoires nécessaires à l’entretien et au nettoyage de votre piscine.",
+        "second": "Une piscine devient un espace important au sein de l’habitation. Élément de design en harmonie avec le jardin et les espaces environnants, elle est aussi un lieu de détente, de loisirs, de sport et de partage avec la famille ou les amis.",
+        "third": "La filtration brevetée des piscines Magiline vous offre une facilité et une qualité d’entretien incomparables. Le nettoyeur Magiline ou le robot contribuent également à maintenir l’eau en parfait état. Tout a été pensé pour réduire la consommation d’électricité, d’eau et de produits d’entretien.",
+        "fourth": "Avec les piscines Magiline, de la piscine classique au bassin sur mesure, nous imaginons avec vous toutes les solutions possibles pour vous offrir une piscine intelligente.",
+        "fifth": "Et ensuite, nous la réalisons, avec une infinité de choix esthétiques et une large gamme d’accessoires pour une piscine unique, celle de vos rêves.",
+        "sixth": "Un concept de structure modulaire permettant d’avoir une piscine autoportante, sans poteaux de soutien ni renforts, insensible à la pourriture et à la corrosion, garantissant une longévité optimale. Grâce à cette technologie, la construction est simple et rapide ; un minimum d’excavation (15 cm supplémentaires) et une installation en seulement 6 à 8 jours.",
+        "seventh": "Nous avons également des variantes à vous proposer : MAGI’style. La piscine hors-sol !",
+        "eighth": "La piscine design MAGI’style est la solution si vous ne savez pas comment construire une piscine enterrée. Elle ne nécessite aucune déclaration de travaux, s’installe rapidement et peut s’intégrer dans tout type d’environnement, lorsqu’il est impossible de réaliser une piscine classique enterrée. Durable et avec une finition esthétique parfaite, elle peut être utilisée dans des zones où la construction temporaire et saisonnière est autorisée. Grâce à sa technologie innovante, la piscine hors-sol MAGI’style est modulaire et peut être intégrée dans n’importe quel espace. Le revêtement intérieur de la piscine est composé de fibres de polyester et de polymères à haute résistance et longévité. Ce matériau ultra-résistant est traité anti-UV grâce à des additifs spéciaux pour limiter autant que possible le vieillissement prématuré.",
+        "nineth": "CRÉATEUR D’ESPACES BIEN-ÊTRE",
+        "tenth": "Depuis 1994, MAGILINE vous invite à voyager chez vous. Notre vocation : créer des espaces privés de bien-être.",
+        "eleventh": "Un plaisir pour toute la famille avec nos collections de piscines et de spas conçues avec passion et installées par des professionnels locaux avec une attention constante à la qualité et au service. Découvrez notre gamme de spas, une expérience unique de relaxation grâce aux meilleures technologies, avec une triple isolation, une structure en acier galvanisé, un revêtement en acrylique haut de gamme et tous les bienfaits de l’hydrothérapie, de la balnéothérapie ou de la chromothérapie.",
+        "twelfth": "UN NOUVEL ESPACE À VIVRE",
+        "thirteenth": "Un spa individuel est le choix d’aménager un espace bien-être au cœur de sa maison, une invitation à s’évader chez soi, dans son intimité, une parenthèse hors du temps pour se détendre à tout moment, sans contraintes et en toute discrétion.",
+        "fourteenth": "BIEN PLUS QUE DE LA DÉTENTE",
+        "fifteenth": "Le spa a de nombreuses vertus au-delà de la réduction du stress et de la relaxation. Il stimule la circulation sanguine, tonifie la peau, apaise les douleurs, facilite la digestion. Il est également de plus en plus utilisé par les sportifs après un entraînement intense pour récupérer plus rapidement.",
+        "sixteenth": "UNE EXPÉRIENCE UNIQUE",
+        "seventeenth": "Grâce à ses buses d’hydromassage, le spa offre des massages précis et efficaces. La combinaison de la chaleur et du massage apaise à la fois le corps et l’esprit, favorisant la santé et le bien-être mental. Profitez de ces moments uniques de paix et de relaxation avec votre partenaire, votre famille ou vos amis (jusqu’à 5 personnes selon les modèles MAGILINE)."
+    },
+    "MaterialsAndFinisches": {
+        "title": "Matériaux et Finitions",
+        "first": "Borga Design offre une sélection de matériaux de haute qualité, incluant:",
+        "second": [
+            "Marbre",
+            "Granit",
+            "Travertin",
+            "Onyx",
+            "Ardoise",
+            "Woodstone",
+            "Corian",
+            "Quartz reconstitué",
+            "Pierres semi-précieuses",
+            "Natura Collection",
+            "Texture Collection",
+            "Shellstone",
+            "Matériaux pour sols extérieurs"
+        ],
+        "third": "Les finitions disponibles incluent:",
+        "fourth": [
+            "Finition Oxydée : Une surface irrégulière qui met en valeur les veines naturelles de la pierre.",
+            "Finition Vieillie : Confère un aspect antique à la pierre, la rendant hydrofuge et oléofuge.",
+            "Finition Naturelle : Parfaite pour les ardoises et porphyres, elle maintient l'aspect brut de la pierre.",
+            "Finition Bouchardée : Crée des surfaces irrégulières et rustiques.",
+            "Finition Flammée : Utilisée principalement sur les granits, elle crée une surface rugueuse et",
+            "résistante.",
+            "Finition Rayée / Égrisée : Donne un effet rayé adapté au marbre et grès.",
+            "Finition Hydro : Un jet d'eau réglable pour créer une texture douce.",
+            "Polissage : Un polissage qui accentue la couleur et la brillance de la pierre. Nous proposons",
+            "également des traitements de brossage, de polissage et anti-taches, pour valoriser chaque projet avec",
+            "des solutions uniques et personnalisées."
+        ]
+    },
+    "Projects": {
+        "title": "Réalisations",
+        "first": "Borga Design a une vaste expérience dans la réalisation d'œuvres en marbre et en pierre naturelle. Parmi nos projets les plus prestigieux, on retrouve:",
+        "second": [
+            "Balustrades",
+            "Colonnes",
+            "Fontaines",
+            "Mosaïques",
+            "Parquet",
+            "Pierres semi-précieuses",
+            "Plans de travail et murs rétroéclairés",
+            "Escaliers",
+            "Yachting"
+        ],
+        "third": "Chaque œuvre est réalisée avec soin et précision, pour créer des éléments décoratifs et fonctionnels d'une beauté exceptionnelle."
+    },
+    "InteriorDesign": {
+        "title": "Design d’Intérieur",
+        "first": "Borga Design est fier de présenter Atelier Plus Montecarlo, notre spin-off dédié exclusivement au design d’intérieurs en marbre. Située au cœur de Monte-Carlo, cette nouvelle entité est née pour répondre aux besoins les plus sophistiqués d'une clientèle internationale. Atelier Plus Montecarlo se consacre à la conception et à la réalisation d’intérieurs luxueux, avec un accent particulier sur les revêtements, sols, plans de cuisine et de salle de bain en marbre raffiné.",
+        "second": "Grâce à notre expérience de plusieurs décennies et à la collaboration avec les meilleurs architectes et designers du secteur, Atelier Plus Montecarlo propose des solutions sur mesure pour des projets résidentiels et commerciaux haut de gamme, alliant savoir-faire artisanal italien et innovation technologique. L'excellence des matériaux, combinée à un service personnalisé, fait de chaque projet une œuvre unique et inimitable."
     }
 }

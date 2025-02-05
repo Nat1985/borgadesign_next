@@ -7,8 +7,11 @@ import Image from 'next/image'
 import SlideEntryWrapper from '../../components/pagesSections/SlideEntryWrapper'
 import NewGrid from '../../components/pagesSections/NewGrid'
 import Footer from '../../components/footer/Footer'
+import { getDictionary } from '@/app/locales/getDictionary'
 
-function MateriauxEdFinitions() {
+function MateriauxEdFinitions({ params }) {
+    const { lng } = params;
+    const t = getDictionary(lng);
     const imagesArray = [
         "/images/pages/materiaux-et-finitions/1.jpg",
         "/images/pages/materiaux-et-finitions/2.jpg",
@@ -21,7 +24,7 @@ function MateriauxEdFinitions() {
         <PageContainer>
             <SmoothModal time={1000} />
             <div className="w-full post-image">
-                <h2 className="h2-over-image">Matériaux et Finitions</h2>
+                <h2 className="h2-over-image">{t.MaterialsAndFinisches.title}</h2>
             </div>
 
             <OpacityEntryWrapper>
@@ -29,23 +32,9 @@ function MateriauxEdFinitions() {
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
-                <p>
-                    Borga Design offre une sélection de matériaux de haute qualité, incluant:
-                </p>
+                <p>{t.MaterialsAndFinisches.first}</p>
                 <ul className="post-image ul-disc pl-8 pb-8">
-                    <li>Marbre</li>
-                    <li>Granit</li>
-                    <li>Travertin</li>
-                    <li>Onyx</li>
-                    <li>Ardoise</li>
-                    <li>Woodstone</li>
-                    <li>Corian</li>
-                    <li>Quartz reconstitué</li>
-                    <li>Pierres semi-précieuses</li>
-                    <li>Natura Collection</li>
-                    <li>Texture Collection</li>
-                    <li>Shellstone</li>
-                    <li>Matériaux pour sols extérieurs</li>
+                {t.MaterialsAndFinisches.second?.map((element, index) => <li key={index}>{element}</li>)}
                 </ul>
             </SlideEntryWrapper>
 
@@ -54,21 +43,9 @@ function MateriauxEdFinitions() {
             </OpacityEntryWrapper>
 
             <SlideEntryWrapper>
-                <p>
-                    Les finitions disponibles incluent:
-                </p>
+                <p>{t.MaterialsAndFinisches.third}</p>
                 <ul className="post-image ul-disc pl-8 pb-8">
-                    <li>Finition Oxydée : Une surface irrégulière qui met en valeur les veines naturelles de la pierre.</li>
-                    <li>Finition Vieillie : Confère un aspect antique à la pierre, la rendant hydrofuge et oléofuge.</li>
-                    <li>Finition Naturelle : Parfaite pour les ardoises et porphyres, elle maintient l'aspect brut de la pierre.</li>
-                    <li>Finition Bouchardée : Crée des surfaces irrégulières et rustiques.</li>
-                    <li>Finition Flammée : Utilisée principalement sur les granits, elle crée une surface rugueuse et</li>
-                    <li>résistante.</li>
-                    <li>Finition Rayée / Égrisée : Donne un effet rayé adapté au marbre et grès.</li>
-                    <li>Finition Hydro : Un jet d'eau réglable pour créer une texture douce.</li>
-                    <li>Polissage : Un polissage qui accentue la couleur et la brillance de la pierre. Nous proposons</li>
-                    <li>également des traitements de brossage, de polissage et anti-taches, pour valoriser chaque projet avec</li>
-                    <li>des solutions uniques et personnalisées.</li>
+                    {t.MaterialsAndFinisches.fourth?.map((element, index) => <li key={index}>{element}</li>)}
                 </ul>
             </SlideEntryWrapper>
 

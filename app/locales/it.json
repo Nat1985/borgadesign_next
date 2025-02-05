@@ -10,5 +10,150 @@
         "projects": "Realizzazioni",
         "interiorDesign": "Design d’Interni",
         "contacts": "Contatti"
+    },
+    "Homepage": {
+        "history": {
+            "title": "BORGA DESIGN",
+            "text": "Tradizione e Maestria Artigianale dal 1891",
+            "link": "/storia",
+            "buttonText": "Scopri la nostra storia"
+        },
+        "floorAndWalls": {
+            "title": "PAVIMENTI E MURI",
+            "text": "Rivestimenti in marmo, granito e pietre naturali",
+            "link": "/pavimenti-e-muri",
+            "buttonText": "Scopri di più su di noi"
+        },
+        "bathroom": {
+            "title": "BAGNO",
+            "text": "Leader nella realizzazione di bagni di lusso",
+            "link": "/bagno",
+            "buttonText": "Scopri di più su di noi"
+        },
+        "kitchen": {
+            "title": "CUCINE",
+            "text": "Realizzazione di cucine su misura in marmo",
+            "link": "/cucine",
+            "buttonText": "Scopri di più su di noi"
+        },
+        "swimmingPools": {
+            "title": "PISCINE",
+            "text": "Distributori ufficiali di Magiline",
+            "link": "/piscine",
+            "buttonText": "Scopri di più su di noi"
+        },
+        "materialsAndFinisches": {
+            "title": "MATERIALI E FINITURE",
+            "text": "Selezione di materiali di alta qualità",
+            "link": "/materiali-e-finiture",
+            "buttonText": "Scopri di più su di noi"
+        },
+        "projects": {
+            "title": "REALIZZAZIONI",
+            "text": "Atelier a Sanremo, con una manodopera altamente qualificata e macchinari all'avanguardia",
+            "link": "/realizzazioni",
+            "buttonText": "Scopri di più su di noi"
+        },
+        "interiorDesign": {
+            "title": "DESIGN D’INTERNI",
+            "text": "Atelier Plus Montecarlo: Design d’Interni in Marmo",
+            "link": "/design-interni",
+            "buttonText": "Scopri di più su di noi"
+        }
+    },
+    "History": {
+        "title": "Storia",
+        "first": "Borga Marmi, «La Passione Italiana per la Pietra», è attiva a Sanremo dal 1891. In quell'anno, Domenico Borga, nato a Nizza nel 1864, trisavolo degli attuali proprietari, aprì il suo primo laboratorio di marmo a Sanremo, seguendo le orme del padre Carlo Giuseppe, presente sulla Costa Azzurra dal 1834 come rinomato scalpellino. Domenico contribuì alla realizzazione di opere emblematiche in pietra e marmo, come il Museo Oceanografico di Monte-Carlo e Villa Ormond a Sanremo.",
+        "second": "Scalpellino talentuoso, Domenico Borga partecipò anche al restauro della Cattedrale di San Siro nel 1901. Da allora, il nome Borga è sinonimo di tradizione marmorea, con una devozione e una passione che continuano a vivere attraverso le generazioni. Molte opere realizzate a mano da Domenico e dai suoi successori sono ancora visibili oggi nel Cimitero Monumentale di Sanremo.",
+        "third": "Nel 1964, sotto la direzione del Dott. Antonio Borga, l'azienda si è trasformata in una PMI con l'ampliamento del laboratorio, degli spazi espositivi e l'acquisizione di macchinari avanzati per la lavorazione di marmo e granito, mantenendo al contempo una meticolosa cura artigianale.",
+        "fouth": "Oggi, grazie al talento per il marmo e al gusto per il design di Anna, combinati con lo spirito imprenditoriale di Stefano, la tradizione si è modernizzata. Il sapere artigianale nella lavorazione della pietra è stato tramandato intatto, accompagnato dalla passione per valorizzare la bellezza naturale di ogni materiale.",
+        "fifth": "Il nostro laboratorio a Sanremo offre un servizio professionale e versatile, con una manodopera altamente qualificata e macchinari all'avanguardia, pronti a realizzare qualsiasi tipo di progetto con la massima precisione e qualità.",
+        "sixth": "Il nostro showroom di oltre 800 m² è un luogo di ispirazione, con una vasta scelta di pavimenti in ceramica, parquet e pietre naturali, ideali per qualsiasi tipo di ambiente, dal più semplice al più lussuoso, situato in Via Armea 135, a Sanremo."
+    },
+    "FloorAndWalls": {
+        "title": "Pavimenti e Muri",
+        "first": "Borga Design realizza pavimenti e rivestimenti in marmo, granito e pietre naturali per un'ampia gamma di applicazioni. Creiamo pavimenti interni ed esterni, rivestimenti, scale, soglie e davanzali per progetti pubblici e privati, tra cui banche, chiese, ospedali e abitazioni di lusso. Offriamo un servizio «chiavi in mano», seguendo tutte le fasi, dalla scelta dei materiali alla posa, senza stress per il cliente.",
+        "second": "Il nostro team di esperti è specializzato nella posa di pavimenti complessi, come il taglio su misura, la posa a macchia aperta, il modulgranito e l’opus romano. I materiali sono selezionati dalle migliori cave del mondo per garantire un risultato finale impeccabile. Collaboriamo con architetti e designer per scegliere le soluzioni più adatte, con una manodopera qualificata capace di valorizzare le sfumature naturali delle pietre."
+    },
+    "Bathroom": {
+        "title": "Bagno",
+        "first": "Borga Design è leader nella realizzazione di bagni di lusso. Con oltre un secolo di esperienza, offriamo arredi e pavimenti per bagni in marmo, granito e materiali compositi. Collaboriamo con i migliori brand italiani per soluzioni complete, dalla progettazione all'installazione. Realizziamo lavabi, piani di lavoro e altri elementi su misura, con finiture esclusive.",
+        "second": "Nel nostro showroom troverai un'ampia gamma di mobili, mosaici, sanitari, rubinetterie e accessori per creare il bagno dei tuoi sogni. Ogni elemento può essere personalizzato per creare un ambiente unico e raffinato."
+    },
+    "Kitchen": {
+        "title": "Cucina",
+        "first": "Borga Design è specializzata nella progettazione e realizzazione di cucine su misura in marmo, granito, quarzo e pietre semipreziose. Le nostre cucine uniscono eleganza e funzionalità, con materiali selezionati per garantire bellezza, resistenza e longevità. Offriamo soluzioni complete che includono piani di lavoro, isole centrali, alzatine e rivestimenti, progettati per integrarsi perfettamente con il design della tua casa.",
+        "second": "Ogni cucina è personalizzata in base alle esigenze del cliente, con finiture raffinate e dettagli che valorizzano la qualità dei materiali scelti. Collaboriamo con architetti e designer per creare cucine uniche, che rappresentano la perfetta unione tra l'artigianato italiano e il design moderno. Grazie alla nostra esperienza, siamo in grado di offrire cucine di lusso, pensate per diventare il cuore della casa, dove bellezza e funzionalità si incontrano."
+    },
+    "SwimmingPool": {
+        "title": "Pisciniste Magiline BORGA DESIGN - SANREMO (IM)",
+        "first": "Nel nostro showroom troverai personale qualificato che ti seguirà nella costruzione, ristrutturazione e manutenzione della tua piscina a partire dalla definizione del progetto fino alla sua realizzazione. All’interno del nostro spazio espositivo potrai trovare tutti gli accessori per la manutenzione e per la pulizia della piscina.",
+        "second": "Una piscina diventa uno spazio importante all’interno dell’abitazione. Elemento di design in armonia con il giardino e con gli spazi circostanti, è anche il luogo per il relax, lo svago, lo sport, la condivisione di momenti con la famiglia o gli amici.",
+        "third": "La filtrazione brevettata delle piscine Magiline ti offre una facilità e una qualità di manutenzione incomparabili. Anche il pulitore Magiline o il robot contribuiscono a mantenere l’acqua in perfetto stato. Tutto è stato pensato per ridurre il consumo di elettricità, d’acqua e di prodotti per la pulizia.",
+        "fourth": "Con le piscine Magline, dalla classica piscina alla vasca su misura, immaginiamo con te tutte le soluzioni possibiliper offrirti una piscina intelligente.",
+        "fifth": "E poi le realizziamo un’infinita gamma di scelte estetiche e svariati accessori per una piscina unica, quella dei tuoi sogni.",
+        "sixth": "Un concept di struttura modulare che permette di avere una piscina autoportante, senza pali di sostegno, né rinforzi, non soggetta a putrefazione né a corrosione, per una longevità garantita. Grazie a questa tecnologia, la realizzazione è facile e veloce; uno scavo minimo (15 cm in più) e una costruzione in soli 6-8 giorni.",
+        "seventh": "Abbiamo anche delle varianti da proporti: MAGI’style. La piscina fuoriterra!",
+        "eighth": "La piscina di design MAGI’style è la soluzione se non sai come costruire una piscina interrata. Non necessita di dichiarazione RIVESTIMENTO INTERNO dei lavori, si installa velocemente e può inserirsi in qualsiasi tipo di contesto, quando non è possibile procedere alla realizzazione di una classica piscina interrata, Durevole e con una perfetta finitura estetica, può essere utilizzato in aree in cui è consentita la costruzione temporanea e stagionale. Grazie alla tecnologia innovativa, la piscina fuori terra MAGI’style è modulare e può essere integrata in qualsiasi spazio. Rivestimento interno della piscina in fibre di poliestere e polimeri ad alta resistenza e longevità. Questo materiale ultra resistente è trattato anti- UV utilizzando speciali additivi per limitare il più possibile l’invecchiamento precoce.",
+        "nineth": "CREATORE DI SPAZI BENESSERE",
+        "tenth": "Dal 1994, MAGILINE ti invita a viaggiare a casa tua. La nostra vocazione, creare spazi privati di benessere.",
+        "eleventh": "Piacere per tutta la famiglia con le nostre collezioni di piscine e Spa progettate con passione e installate da professionisti locali con una costante attenzione alla qualità e al servizio. Scopri la nostra gamma di Spa, un’esperienza unica di relax grazie al meglio della tecnologia con triplo isolamento, struttura in acciaio zincato, rivestimento in acrilico di alta gamma e tutti i benefici dell’idroterapia, della balneoterapia o della cromoterapia.",
+        "twelfth": "UN NUOVO SPAZIO DA VIVERE",
+        "thirteenth": "Una Spa individuale è la scelta di allestire uno spazio benessere nel cuore della propria casa, è un invito a evadere in casa, nella propria intimità, una parentesi senza tempo per staccare in ogni momento, senza costrizioni e in tutta discrezione.",
+        "fourteenth": "MOLTO ALTRO CHE RELAX",
+        "fifteenth": "La Spa ha molte virtù oltre alla riduzione dello stress e al relax. Stimola la circolazione sanguigna, tonifica la pelle, lenisce il dolore, facilita la digestione. Inoltre è sempre più utilizzato dagli atleti dopo un allenamento intenso per recuperare più velocemente.",
+        "sixteenth": "UN’ESPERIENZA UNICA",
+        "seventeenth": "Grazie alle sue bocchette idromassaggio, la Spa offre massaggi precisi ed efficaci. La combinazione di calore e massaggio lenisce sia il corpo che la mente, la salute e la mente. Goditi questi momenti unici di pace e relax con il tuo partner, la famiglia o gli amici (fino a 5 persone a seconda dei modelli MAGILINE)."
+    },
+    "MaterialsAndFinisches": {
+        "title": "Materiali e Finiture",
+        "first": "Borga Design offre una selezione di materiali di alta qualità, tra cui:",
+        "second": [
+            "Marmo",
+            "Granito",
+            "Travertino",
+            "Onice",
+            "Ardesia",
+            "Woodstone",
+            "Corian",
+            "Quarzo ricostituito",
+            "Pietre semipreziose",
+            "Natura Collection",
+            "Texture Collection",
+            "Shellstone",
+            "Materiali per pavimenti esterni"
+        ],
+        "third": "Le finiture disponibili includono:",
+        "fourth": [
+            "Finitura Ossidata: Una superficie irregolare che valorizza le venature naturali della pietra.",
+            "Finitura Invecchiata: Conferisce un aspetto antico alla pietra, rendendola idrorepellente e oleorepellente.",
+            "Finitura Naturale: Perfetta per ardesie e porfidi, mantiene l'aspetto grezzo della pietra.",
+            "Finitura Bocciardata: Crea superfici irregolari e rustiche.",
+            "Finitura Fiammata: Utilizzata principalmente sui graniti, crea una superficie ruvida e resistente.",
+            "Finitura Rigata / Sabbiata: Dona un effetto rigato, ideale per marmo e gres.",
+            "Finitura Idro: Un getto d'acqua regolabile per creare una texture morbida.",
+            "Lucidatura: Un trattamento che esalta il colore e la brillantezza della pietra. Offriamo anche trattamenti di spazzolatura, lucidatura e antimacchia, per valorizzare ogni progetto con soluzioni uniche e personalizzate."
+        ]
+    },
+    "Projects": {
+        "title": "Realizzazioni",
+        "first": "Borga Design vanta una vasta esperienza nella realizzazione di opere in marmo e pietra naturale. Tra i nostri progetti più prestigiosi, troviamo:",
+        "second": [
+            "Balaustre",
+            "Colonne",
+            "Fontane",
+            "Mosaici",
+            "Parquet",
+            "Pietre semipreziose",
+            "Piani di lavoro e pareti retroilluminate",
+            "Scale",
+            "Yachting"
+        ],
+        "third": "Ogni opera è realizzata con cura e precisione, per creare elementi decorativi e funzionali di straordinaria bellezza."
+    },
+    "InteriorDesign": {
+        "title": "Design d’Interni",
+        "first": "Borga Design è orgogliosa di presentare Atelier Plus Montecarlo, il nostro spin-off dedicato esclusivamente al design d’interni in marmo. Situata nel cuore di Monte-Carlo, questa nuova entità è nata per soddisfare le esigenze più sofisticate di una clientela internazionale. Atelier Plus Montecarlo si dedica alla progettazione e realizzazione di interni di lusso, con un’attenzione particolare ai rivestimenti, pavimenti, piani cucina e bagno in marmo pregiato.",
+        "second": "Grazie alla nostra esperienza pluridecennale e alla collaborazione con i migliori architetti e designer del settore, Atelier Plus Montecarlo offre soluzioni su misura per progetti residenziali e commerciali di alto livello, unendo il know-how artigianale italiano all’innovazione tecnologica. L’eccellenza dei materiali, combinata a un servizio personalizzato, rende ogni progetto un’opera unica e inimitabile."
     }
 }
