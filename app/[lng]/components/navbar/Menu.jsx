@@ -121,32 +121,36 @@ function Menu() {
     return (
         <div ref={overlayRef} className='fixed inset-0 bg-black bg-opacity-80 flex justify-end z-10'>
             {!crossClosed && <Image ref={crossRef} className='absolute top-10 right-6 z-10 cursor-pointer' src='/icons/cross.png' width={36} height={36} alt="Menu icon" onClick={() => handleClick('close')} />}
-            <div ref={whitePanelRef} className={`absolute right-0 top-0 bottom-0 bg-[#231f20] flex flex-col justify-center md:justify-start items-center ${windowWidth <= 768 ? 'left-0' : 'w-96'}`}>
+            {/* Panel */}
+            <div ref={whitePanelRef} className={`absolute right-0 top-0 bottom-0 bg-[#231f20] ${windowWidth <= 768 ? 'left-0' : 'w-96'} flex flex-col justify-start items-center pt-16 pb-4`}>
                 {/* Menu */}
-                <ul ref={containerRef} className='md:mt-[100px] text-white text-3xl text-center flex flex-col gap-8 md:gap-4'>
+                <ul ref={containerRef} className='text-white text-3xl text-center flex flex-col gap-4 md:gap-4'>
                     {
                         links.map((element, index) => {
                             return <li key={index} className='field font-extralight hover:text-rose-700 cursor-pointer' onClick={() => handleClick(element.link)}>{element.label}</li>
                         })
                     }
                 </ul>
-                {/* Scarica brochure */}
-                <div ref={brochureRef} className='w-full mt-16 flex flex-col items-center'>
-                    <div className='text-white mb-4'>{t.Navbar.downloadBrochure}</div>
-                    <div className='flex flex-col text-3xl gap-2'>
-                        <div className='overflow-hidden rounded cursor-pointer'><a href="/pdf/borga.pdf"><Image src="/images/borga.png" width={200} height={0} /></a></div>
-                        <div className='overflow-hidden rounded cursor-pointerì'><a href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={200} height={0} /></a></div>
+                <div className='flex flex-col flex-grow justify-end gap-8'>
+                    {/* Scarica brochure */}
+                    <div ref={brochureRef} className='w-full flex flex-col items-center'>
+                        <div className='text-white mb-4'>{t.Navbar.downloadBrochure}</div>
+                        <div className='flex flex-col text-3xl gap-2'>
+                            <div className='overflow-hidden rounded cursor-pointer'><a href="/pdf/borga.pdf"><Image src="/images/borga.png" width={200} height={0} /></a></div>
+                            <div className='overflow-hidden rounded cursor-pointerì'><a href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={200} height={0} /></a></div>
+                        </div>
+                    </div>
+                    {/* Seleziona lingua */}
+                    <div ref={languageRef} className='w-full flex flex-col items-center justify-end pb-8 gap-2'>
+                        <div className='text-white'>{t.Navbar.selectLanguage}</div>
+                        <div className='flex gap-2 text-3xl'>
+                            <button onClick={() => switchLanguage('fr')} className={`cursor-pointer rounded p-2 ${lng === 'fr' && 'border'}`}>🇫🇷</button>
+                            <button onClick={() => switchLanguage('it')} className={`cursor-pointer rounded p-2 ${lng === 'it' && 'border'}`}>🇮🇹</button>
+                            <button onClick={() => switchLanguage('en')} className={`cursor-pointer rounded p-2 ${lng === 'en' && 'border'}`}>🇬🇧</button>
+                        </div>
                     </div>
                 </div>
-                {/* Seleziona lingua */}
-                <div ref={languageRef} className='w-full mt-8 flex-grow flex flex-col items-center justify-end pb-8 gap-2'>
-                    <div className='text-white'>{t.Navbar.selectLanguage}</div>
-                    <div className='flex gap-2 text-3xl'>
-                        <button onClick={() => switchLanguage('fr')} className={`cursor-pointer rounded p-2 ${lng === 'fr' && 'border'}`}>🇫🇷</button>
-                        <button onClick={() => switchLanguage('it')} className={`cursor-pointer rounded p-2 ${lng === 'it' && 'border'}`}>🇮🇹</button>
-                        <button onClick={() => switchLanguage('en')} className={`cursor-pointer rounded p-2 ${lng === 'en' && 'border'}`}>🇬🇧</button>
-                    </div>
-                </div>
+
 
             </div>
         </div>
