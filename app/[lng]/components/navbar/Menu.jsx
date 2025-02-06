@@ -144,9 +144,15 @@ function Menu() {
                     <div ref={languageRef} className='w-full flex flex-col items-center justify-end pb-8 gap-2'>
                         <h4 className='text-white'>{t.Navbar.selectLanguage}</h4>
                         <div className='flex gap-2 text-3xl'>
-                            <button onClick={() => switchLanguage('fr')} className={`cursor-pointer rounded p-2 ${lng === 'fr' && 'border'}`}>🇫🇷</button>
-                            <button onClick={() => switchLanguage('it')} className={`cursor-pointer rounded p-2 ${lng === 'it' && 'border'}`}>🇮🇹</button>
-                            <button onClick={() => switchLanguage('en')} className={`cursor-pointer rounded p-2 ${lng === 'en' && 'border'}`}>🇬🇧</button>
+                            <button onClick={() => switchLanguage('fr')} className={`cursor-pointer rounded-full p-2 ${lng === 'fr' && 'border'}`}>
+                                <Image src="/images/flags/france.png" width={32} height={32} />
+                            </button>
+                            <button onClick={() => switchLanguage('it')} className={`cursor-pointer rounded-full p-2 ${lng === 'it' && 'border'}`}>
+                                <Image src="/images/flags/italy.png" width={32} height={32} />
+                            </button>
+                            <button onClick={() => switchLanguage('en')} className={`cursor-pointer rounded-full p-2 ${lng === 'en' && 'border'}`}>
+                                <Image src="/images/flags/united-kingdom.png" width={32} height={32} />
+                            </button>
                         </div>
                     </div>
                 </div>
