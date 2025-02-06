@@ -1,0 +1,175 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "history": "History",
+        "floorAndWalls": "Floors and Walls",
+        "bathroom": "Bathroom",
+        "kitchen": "Kitchen",
+        "swimmingPools": "Swimming Pools",
+        "materialsAndFinisches": "Materials and Finishes",
+        "projects": "Projects",
+        "interiorDesign": "Interior Design",
+        "contacts": "Contacts",
+        "selectLanguage": "Select Language",
+        "downloadBrochure": "Discover our catalogues"
+    },
+    "Homepage": {
+        "history": {
+            "title": "BORGA DESIGN",
+            "text": "Tradition and Artisanal Expertise since 1891",
+            "link": "/history",
+            "buttonText": "Discover our history"
+        },
+        "floorAndWalls": {
+            "title": "FLOORS AND WALLS",
+            "text": "Marble, granite, and natural stone coverings",
+            "link": "/floors-and-walls",
+            "buttonText": "Learn more about us"
+        },
+        "bathroom": {
+            "title": "BATHROOM",
+            "text": "Leader in the creation of luxury bathrooms",
+            "link": "/bathroom",
+            "buttonText": "Learn more about us"
+        },
+        "kitchen": {
+            "title": "KITCHENS",
+            "text": "Custom-made marble kitchens",
+            "link": "/kitchens",
+            "buttonText": "Learn more about us"
+        },
+        "swimmingPools": {
+            "title": "SWIMMING POOLS",
+            "text": "Official Magiline distributors",
+            "link": "/swimming-pools",
+            "buttonText": "Learn more about us"
+        },
+        "materialsAndFinisches": {
+            "title": "MATERIALS AND FINISHES",
+            "text": "Selection of high-quality materials",
+            "link": "/materials-and-finishes",
+            "buttonText": "Learn more about us"
+        },
+        "projects": {
+            "title": "PROJECTS",
+            "text": "Workshop in Sanremo, with highly skilled labor and state-of-the-art machinery",
+            "link": "/projects",
+            "buttonText": "Learn more about us"
+        },
+        "interiorDesign": {
+            "title": "INTERIOR DESIGN",
+            "text": "Atelier Plus Montecarlo: Interior Marble Design",
+            "link": "/interior-design",
+            "buttonText": "Learn more about us"
+        }
+    },
+    "History": {
+        "title": "History",
+        "first": "Borga Marmi, 'The Italian Passion for Stone,' has been active in Sanremo since 1891. That year, Domenico Borga, born in Nice in 1864, great-great-grandfather of the current owners, opened his first marble workshop in Sanremo, following in the footsteps of his father, Carlo Giuseppe, who had been working on the French Riviera since 1834 as a renowned stonecutter. Domenico contributed to the creation of iconic works in stone and marble, such as the Oceanographic Museum of Monte-Carlo and Villa Ormond in Sanremo.",
+        "second": "A talented stonecutter, Domenico Borga also participated in the restoration of the Cathedral of San Siro in 1901. Since then, the name Borga has been synonymous with marble tradition, with dedication and passion that continue to live on through generations. Many handcrafted works by Domenico and his successors are still visible today in the Monumental Cemetery of Sanremo.",
+        "third": "In 1964, under the direction of Dr. Antonio Borga, the company evolved into an SME with the expansion of the workshop, exhibition spaces, and the acquisition of advanced machinery for marble and granite processing, while maintaining meticulous artisanal care.",
+        "fouth": "Today, thanks to Anna's talent for marble and design, combined with Stefano's entrepreneurial spirit, tradition has been modernized. The artisanal expertise in stone processing has been passed down intact, accompanied by the passion for enhancing the natural beauty of each material.",
+        "fifth": "Our workshop in Sanremo offers a professional and versatile service, with highly skilled labor and cutting-edge machinery, ready to complete any type of project with the utmost precision and quality.",
+        "sixth": "Our showroom, over 800 m², is a place of inspiration, offering a wide selection of ceramic floors, parquet, and natural stones, ideal for all types of environments, from simple to luxurious, located at Via Armea 135, in Sanremo."
+    },
+    "FloorAndWalls": {
+        "title": "Floors and Walls",
+        "first": "Borga Design creates marble, granite, and natural stone floors and coverings for a wide range of applications. We design interior and exterior floors, wall coverings, staircases, thresholds, and windowsills for public and private projects such as banks, churches, hospitals, and luxury homes. We offer a 'turnkey' service, managing all stages from material selection to installation, ensuring a stress-free experience for the client.",
+        "second": "Our team of experts specializes in complex flooring installations such as custom cuts, book-matching, modulgranite, and Roman opus. Materials are sourced from the best quarries worldwide to ensure a flawless final result. We collaborate with architects and designers to choose the most suitable solutions, with skilled craftsmanship that highlights the natural nuances of stone."
+    },
+    "Bathroom": {
+        "title": "Bathroom",
+        "first": "Borga Design is a leader in the creation of luxury bathrooms. With over a century of experience, we offer bathroom furnishings and flooring in marble, granite, and composite materials. We collaborate with the best Italian brands to provide complete solutions, from design to installation. We create custom-made sinks, countertops, and other elements with exclusive finishes.",
+        "second": "In our showroom, you will find a wide range of furniture, mosaics, sanitary ware, faucets, and accessories to create the bathroom of your dreams. Each element can be customized to create a unique and refined environment."
+    },
+    "Kitchen": {
+        "title": "Kitchen",
+        "first": "Borga Design specializes in designing and creating custom-made kitchens in marble, granite, quartz, and semi-precious stones. Our kitchens combine elegance and functionality, with carefully selected materials to ensure beauty, durability, and longevity. We offer complete solutions, including countertops, central islands, backsplashes, and wall coverings, designed to integrate seamlessly into your home’s design.",
+        "second": "Each kitchen is customized according to the client's needs, with refined finishes and details that enhance the quality of the chosen materials. We work with architects and designers to create unique kitchens that perfectly merge Italian craftsmanship with modern design. Thanks to our experience, we are able to offer luxury kitchens designed to become the heart of the home, where beauty and functionality meet."
+    },
+    "SwimmingPool": {
+        "title": "Magiline Pool Builder - BORGA DESIGN SANREMO (IM)",
+        "first": "In our showroom, you will find qualified personnel who will guide you through the construction, renovation, and maintenance of your pool, from the project definition to its completion. In our exhibition space, you will also find all accessories needed for pool maintenance and cleaning.",
+        "second": "A swimming pool becomes an important space within the home. A design element in harmony with the garden and surrounding spaces, it is also a place for relaxation, leisure, sports, and sharing moments with family or friends.",
+        "third": "Magiline's patented filtration system offers unparalleled ease and quality of maintenance. The Magiline cleaner or robot also helps keep the water in perfect condition. Everything has been designed to reduce electricity, water, and cleaning product consumption.",
+        "fourth": "With Magiline pools, from classic pools to custom-made basins, we imagine all possible solutions with you to offer a smart pool.",
+        "fifth": "And then we make it a reality. An endless range of aesthetic choices and various accessories for a unique pool, the one of your dreams.",
+        "sixth": "A modular structure concept that allows for a self-supporting pool, without support poles or reinforcements, resistant to rot and corrosion, ensuring long-lasting durability. Thanks to this technology, construction is easy and fast, requiring minimal excavation (just 15 cm more) and completion in just 6-8 days.",
+        "seventh": "We also offer an alternative: MAGI’style. The above-ground pool!",
+        "eighth": "The MAGI’style designer pool is the solution if you don’t know how to build an in-ground pool. It does not require a building permit, installs quickly, and can be integrated into any setting where traditional in-ground pool construction is not possible. Durable and aesthetically refined, it can be used in areas where temporary and seasonal construction is permitted. Thanks to its innovative technology, the MAGI’style above-ground pool is modular and can be fitted into any space. The interior lining consists of high-strength polyester fibers and polymers, ensuring longevity. This ultra-resistant material is treated with special anti-UV additives to minimize premature aging.",
+        "nineth": "CREATOR OF WELLNESS SPACES",
+        "tenth": "Since 1994, MAGILINE has invited you to travel within your own home. Our mission: to create private wellness spaces.",
+        "eleventh": "Pleasure for the whole family with our collections of pools and spas, designed with passion and installed by local professionals with constant attention to quality and service. Discover our range of spas, a unique relaxation experience thanks to the best technology, featuring triple insulation, a galvanized steel structure, a premium acrylic lining, and all the benefits of hydrotherapy, balneotherapy, and chromotherapy.",
+        "twelfth": "A NEW LIVING SPACE",
+        "thirteenth": "A personal spa is the choice to create a wellness space in your home, an invitation to escape within your own space, a timeless retreat to relax at any moment, without constraints and in total privacy.",
+        "fourteenth": "MUCH MORE THAN RELAXATION",
+        "fifteenth": "The spa offers numerous benefits beyond stress reduction and relaxation. It stimulates blood circulation, tones the skin, soothes pain, and aids digestion. It is also increasingly used by athletes after intense training to speed up recovery.",
+        "sixteenth": "A UNIQUE EXPERIENCE",
+        "seventeenth": "Thanks to its hydro-massage jets, the spa offers precise and effective massages. The combination of heat and massage soothes both body and mind, enhancing overall well-being. Enjoy these unique moments of peace and relaxation with your partner, family, or friends (up to 5 people depending on the MAGILINE models).",
+        "catalogueDownload": "Click below to download our catalogues",
+        "contactUs": "or contact us today to start creating your dream pool"
+    },
+    "MaterialsAndFinisches": {
+        "title": "Materials and Finishes",
+        "first": "Borga Design offers a selection of high-quality materials, including:",
+        "second": [
+            "Marble",
+            "Granite",
+            "Travertine",
+            "Onyx",
+            "Slate",
+            "Woodstone",
+            "Corian",
+            "Reconstituted Quartz",
+            "Semi-precious Stones",
+            "Natura Collection",
+            "Texture Collection",
+            "Shellstone",
+            "Materials for Outdoor Flooring"
+        ],
+        "third": "Available finishes include:",
+        "fourth": [
+            "Oxidized Finish: An irregular surface that enhances the natural veins of the stone.",
+            "Aged Finish: Gives the stone an antique appearance, making it water- and oil-repellent.",
+            "Natural Finish: Perfect for slates and porphyry, it maintains the raw appearance of the stone.",
+            "Bush-Hammered Finish: Creates irregular and rustic surfaces.",
+            "Flamed Finish: Mainly used on granites, it creates a rough and resistant surface.",
+            "Striped / Sanded Finish: Gives a striped effect suitable for marble and stoneware.",
+            "Hydro Finish: A controlled water jet creates a soft texture.",
+            "Polishing: A polishing treatment that enhances the color and shine of the stone. We also offer brushing, polishing, and anti-stain treatments to enhance each project with unique and customized solutions."
+        ]
+    },
+    "Projects": {
+        "title": "Projects",
+        "first": "Borga Design has extensive experience in the creation of works in marble and natural stone. Among our most prestigious projects, we include:",
+        "second": [
+            "Balustrades",
+            "Columns",
+            "Fountains",
+            "Mosaics",
+            "Parquet",
+            "Semi-precious Stones",
+            "Backlit countertops and walls",
+            "Staircases",
+            "Yachting"
+        ],
+        "third": "Each piece is crafted with care and precision to create decorative and functional elements of exceptional beauty."
+    },
+    "InteriorDesign": {
+        "title": "Interior Design",
+        "first": "Borga Design is proud to introduce Atelier Plus Montecarlo, our spin-off dedicated exclusively to marble interior design. Located in the heart of Monte-Carlo, this new entity was created to meet the most sophisticated needs of an international clientele. Atelier Plus Montecarlo specializes in designing and creating luxurious interiors, with a particular focus on coverings, flooring, kitchen countertops, and bathroom surfaces in refined marble.",
+        "second": "Thanks to our decades of experience and collaboration with the best architects and designers in the industry, Atelier Plus Montecarlo offers tailor-made solutions for high-end residential and commercial projects, combining Italian artisanal expertise with technological innovation. The excellence of materials, combined with a personalized service, makes each project a unique and inimitable masterpiece."
+    },
+    "Footer": {
+        "contact": "Contact us now",
+        "title": "Showroom Borga Design",
+        "street": "Via Armea, 135",
+        "city": "Sanremo (IM) 18038 Italy",
+        "tel": "Tel: +39 335 5921319",
+        "fax": "Fax: +39 0184 514070",
+        "email": "Email: info@borgamarmi.it",
+        "openingHours": "Opening Hours",
+        "week": "Monday - Friday: 08:00 - 12:00 / 14:00 - 18:30",
+        "weekEnd": "Saturday: 09:00 - 12:00"
+    }
+}
