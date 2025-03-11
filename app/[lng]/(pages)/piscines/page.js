@@ -156,8 +156,8 @@ function Piscines({ params }) {
             <div className='w-full flex flex-col items-center mt-16'>
                 <h4 className='text-white mb-4'>{t.SwimmingPool.catalogueDownload}</h4>
                 <div className='flex flex-col text-3xl gap-4 md:gap-2'>
-                    <div className='overflow-hidden rounded cursor-pointer hover:opacity-80'><a href="/pdf/borga.pdf"><Image src="/images/borga.png" width={300} height={0} /></a></div>
-                    <div className='overflow-hidden rounded cursor-pointer hover:opacity-80'><a href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={300} height={0} /></a></div>
+                    <div className='overflow-hidden rounded cursor-pointer hover:opacity-80'><a id="borga-catalogue-page" href="/pdf/borga.pdf"><Image src="/images/borga.png" width={300} height={0} /></a></div>
+                    <div className='overflow-hidden rounded cursor-pointer hover:opacity-80'><a id="magiline-catalogue-page" href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={300} height={0} /></a></div>
                 </div>
                 <h4 className='text-white mt-16 mb-[-64px]'>{t.SwimmingPool.contactUs}</h4>
             </div>
