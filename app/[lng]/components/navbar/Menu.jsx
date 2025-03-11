@@ -136,8 +136,8 @@ function Menu() {
                     <div ref={brochureRef} className='w-full flex flex-col items-center'>
                         <h4 className='text-white mb-4'>{t.Navbar.downloadBrochure}</h4>
                         <div className='flex flex-col text-3xl gap-4 md:gap-2'>
-                            <div className='overflow-hidden rounded cursor-pointer'><a href="/pdf/borga.pdf"><Image src="/images/borga.png" width={100} height={0} /></a></div>
-                            <div className='overflow-hidden rounded cursor-pointer'><a href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={100} height={0} /></a></div>
+                            <div className='overflow-hidden rounded cursor-pointer'><a id="borga-catalogue-download" href="/pdf/borga.pdf"><Image src="/images/borga.png" width={100} height={0} /></a></div>
+                            <div className='overflow-hidden rounded cursor-pointer'><a id="magiline-catalogue-download" href="/pdf/magiline.pdf"><Image src="/images/magiline.png" width={100} height={0} /></a></div>
                         </div>
                     </div>
                     {/* Seleziona lingua */}

@@ -34,8 +34,10 @@ function page({ params }) {
                 </ul>
 
             </div>
-            <div className='w-full flex justify-center pt-16'>
-                <Link href="mailto:info@borgamarmi.it"><RedButton text={t.Footer.contact} /></Link>
+            <div className='w-fit self-center flex justify-center mt-16'>
+                <Link href="mailto:info@borgamarmi.it">
+                    <button id="contact-email-button" className='bg-rose-700 py-2 px-4 rounded hover:bg-opacity-80 text-white'>{t.Footer.contact}</button>
+                </Link>
             </div>
         </PageContainer>
     )
