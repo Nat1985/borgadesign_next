@@ -1,10 +1,9 @@
 import localFont from "next/font/local";
 import "../globals.css";
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
 import { Montserrat } from '@next/font/google';
 import CookieBanner from "./components/CookieBanner";
-import { getDictionary } from "../locales/getDictionary";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -31,8 +30,19 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <CookieBanner />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB6JSM6P');</script>
+        <!-- End Google Tag Manager -->
       </head>
       <body className={montserrat.className}>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB6JSM6P"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <Navbar />
         {children}
       </body>
